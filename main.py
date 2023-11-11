@@ -1,5 +1,6 @@
-import ya_academy_contest_problems
+from ya_academy_contest_problems import *
 from sow_python_problems import *
+from code_basics_python import *
 
 EXIT_CHOICE = 1
 # yandex
