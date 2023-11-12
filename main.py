@@ -4,14 +4,14 @@ from code_basics_python import *
 
 EXIT_CHOICE = 1
 # yandex
-YA_CHOICE = 'ya'
+YA_CHOICE = "ya"
 TOPIC_2_CHOICE = 2
 TOPIC_3_CHOICE = 3
 TOPIC_4_CHOICE = 4
 TOPIC_5_CHOICE = 5
 TOPIC_6_CHOICE = 6
 # sow_python
-SOWPY_CHOICE = 'sowpy'
+SOWPY_CHOICE = "sowpy"
 CHAPTER_2_CHOICE = 2
 CHAPTER_3_CHOICE = 3
 CHAPTER_4_CHOICE = 4
@@ -30,7 +30,7 @@ CHAPTER_15_CHOICE = 15
 
 def start():
     print("Ya or SOWPY?")
-    choice = input('Choose a project to show:')
+    choice = input("Choose a project to show:")
     if choice == YA_CHOICE:
         ya_main()
     elif choice == SOWPY_CHOICE:
