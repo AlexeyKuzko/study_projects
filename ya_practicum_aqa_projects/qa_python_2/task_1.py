@@ -13,7 +13,7 @@ class Case:
 
 
 class ExtendedCase(Case):
-    def __init__(self, test_case_id, name, step_description, expected_result, precondition, environment):
+    def __init__(self, test_case_id, name, step_description, expected_result, precondition: str, environment: str):
         self.precondition = precondition
         self.environment = environment
         super().__init__(test_case_id, name, step_description, expected_result)
