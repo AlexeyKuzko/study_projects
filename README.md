@@ -1,6 +1,5 @@
 # Study Projects repository
-This repo contains my solutions to problems from different self-study resources.
-Treat it as a work-in-progress public diary, but not as a something practically useful.
+This repo contains my solutions to problems from different educational resources.
 # Starting Out with Python
 A subproject based on solved problems from book Starting Out with Python by Tony Gaddis
 # Yandex Academy: Python Handbook
