@@ -5,6 +5,7 @@ def divide_orange(n):
             if c >= 1:
                 print(f"{a} {b} {c}")
 
+
 segments = int(input())
-print(f"А Б В")
+print("А Б В")
 divide_orange(segments)
