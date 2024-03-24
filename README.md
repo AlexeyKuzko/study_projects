@@ -1,11 +1,11 @@
 # Study Projects repository
-## This repo contains my solutions to problems from different educational resources
+## This repo contains my solutions to problems from various educational resources
 ***
-### Yandex Practicum: Automation QA Engineer
-Collection of study projects solved while learning at Yandex Practicum course.
-### Starting Out with Python
-A subproject based on solved problems from book Starting Out with Python by Tony Gaddis
-### Yandex Academy: Python Handbook
-This subproject includes my solutions for problems published at Yandex Contest platform.
-### Code Basics: Python
-Subproject that contains a single module with solutions for Code Basics' Python practical course.
+### [Yandex Practicum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_practicum_aqa_projects)
+Collection of study projects solved while learning at Yandex Practicum [course](https://practicum.yandex.ru/qa-automation-engineer-python/).
+### [Starting Out with Python](https://github.com/AlexeyKuzko/study_projects/tree/main/sow_python_problems)
+A subproject based on solved problems from [book](https://www.pearson.com/en-us/subject-catalog/p/starting-out-with-python/P200000003356/9780136912330) Starting Out with Python by Tony Gaddis.
+### [Yandex Academy: Python Handbook](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_academy_contest_problems)
+This subproject includes my solutions for problems published at Yandex Contest [platform](https://education.yandex.ru/handbook/python).
+### [Code Basics: Python](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics_python)
+A single module with solutions for Code Basics' Python [practical course](https://code-basics.com/languages/python).

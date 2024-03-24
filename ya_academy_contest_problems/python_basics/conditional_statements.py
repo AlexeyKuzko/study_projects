@@ -16,6 +16,7 @@ elif dela == "плохо":
 Всё наладится!"""
     )
 
+
 # Problem B
 petya = int(input(""))
 vasya = int(input(""))
@@ -23,6 +24,7 @@ if petya > vasya:
     print("Петя")
 else:
     print("Вася")
+
 
 # Problem C
 petya = int(input(""))
@@ -34,6 +36,7 @@ elif tolya > vasya and petya < tolya:
     print("Толя")
 else:
     print("Вася")
+
 
 # Problem D
 petya = int(input(""))
@@ -59,6 +62,7 @@ elif fastest == tolya:
     else:
         print("2. Вася\n3. Петя")
 
+
 # Problem E
 petya = 7
 vasya = 6
@@ -74,6 +78,7 @@ if petya > vasya:
 else:
     print("Вася")
 
+
 # Problem F
 year = int(input(""))
 
@@ -88,6 +93,7 @@ if year % 4 == 0:
 else:
     print("NO")
 
+
 # Problem G
 number = input("")
 
@@ -96,6 +102,7 @@ if number == number[::-1]:
 else:
     print("NO")
 
+
 # Problem H
 string = str(input())
 
@@ -103,6 +110,7 @@ if "зайка" in string:
     print("YES")
 else:
     print("NO")
+
 
 # Problem I
 str1 = input("")
@@ -116,6 +124,7 @@ elif less == str2:
 else:
     print(str3)
 
+
 # Problem J
 password = input()
 sum_least_significant = int(password[1]) + int(password[2])
@@ -125,6 +134,7 @@ new_number = str(max(sum_least_significant, sum_most_significant)) + str(
 )
 
 print(new_number)
+
 
 # Problem K
 number = input("")
@@ -143,6 +153,7 @@ if minimum + maximum == remaining * 2:
 else:
     print("NO")
 
+
 # Problem L
 length1 = int(input(""))
 length2 = int(input(""))
@@ -157,6 +168,7 @@ if (
 else:
     print("NO")
 
+
 # Problem M
 elf_number = input("")
 gnome_number = input("")
@@ -170,6 +182,7 @@ for i in range(2):
         break
 print(common_digit)
 
+
 # Problem N
 number = input("")
 digits_asc = sorted(number)
@@ -179,6 +192,7 @@ if int(min_number[0]) == 0:
     min_number = int(f'{"".join(digits_asc[1])}0')
 max_number = int("".join(digits_desc[0:2]))
 print(min_number, max_number)
+
 
 # Problem O
 number_1 = int(input())
@@ -192,6 +206,7 @@ minimum = min(a, b, c, d)
 total = a + b + c + d
 middle = (total - minimum - maximum) % 10
 print(f"{maximum}{middle}{minimum}")
+
 
 # Problem P
 p = int(input())
@@ -223,6 +238,7 @@ print(
 )
 print(f"{' ' * 3}II{' ' * 6}I{' ' * 6}III{' ' * 2}")
 
+
 # Problem Q
 a = float(input())
 b = float(input())
@@ -246,6 +262,7 @@ elif D == 0:
 else:
     print("No solution")
 
+
 # Problem R
 side1 = int(input(""))
 side2 = int(input(""))
@@ -266,6 +283,7 @@ elif (
 else:
     print("крайне мала")
 
+
 # Problem S
 x = float(input())
 y = float(input())
@@ -281,6 +299,7 @@ elif y < 0 and (-7 < x < 5) and (y > ((1 / 4) * (x**2) + (x / 2) - (35 / 4))):
     print("Опасность! Покиньте зону как можно скорее!")
 else:
     print("Зона безопасна. Продолжайте работу.")
+
 
 # Problem T
 string_1 = str(input())
