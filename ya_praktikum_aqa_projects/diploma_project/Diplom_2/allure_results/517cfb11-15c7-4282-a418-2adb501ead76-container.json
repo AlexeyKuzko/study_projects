@@ -1,0 +1,1 @@
+{"uuid": "58e3ae2f-5886-4943-b14f-4d1c465660cd", "children": ["6e601006-7274-42ba-8f70-1df153b21357"], "befores": [{"name": "gen_name", "status": "passed", "steps": [{"name": "Генерация тестового имени", "status": "passed", "start": 1712519354227, "stop": 1712519354227}], "start": 1712519354227, "stop": 1712519354227}], "start": 1712519354227, "stop": 1712519354475}

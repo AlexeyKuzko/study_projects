@@ -1,7 +1,7 @@
 # Study Projects repository
 ## This repo contains my solutions to problems from various educational resources
 ***
-### [Yandex Practicum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_practicum_aqa_projects)
+### [Yandex Praktikum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_praktikum_aqa_projects)
 Collection of study projects solved while learning at Yandex Practicum [course](https://practicum.yandex.ru/qa-automation-engineer-python/).
 ### [Starting Out with Python](https://github.com/AlexeyKuzko/study_projects/tree/main/sow_python_problems)
 A subproject based on solved problems from [book](https://www.pearson.com/en-us/subject-catalog/p/starting-out-with-python/P200000003356/9780136912330) Starting Out with Python by Tony Gaddis.

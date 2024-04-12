@@ -15,5 +15,5 @@ Sprint 5 - a project that demonstrates skills of UI testing of web services.
 Sprint 6 - this project aims to demonstrate the use of the POM in automated testing.
 ### [API testing](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_practicum_aqa_projects/sprint_7_api_testing)
 Sprint 7 - practicing in API testing of a web service.
-### Diploma project
+### D[iploma project](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_practicum_aqa_projects/diploma_project)
 Sprint 8-9 - this project summarize all the skills demonstrated in previous sprints.

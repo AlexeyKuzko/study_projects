@@ -1,0 +1,1 @@
+{"uuid": "a7f4154e-697e-427a-97d4-271fd6ab3013", "children": ["59ba611b-e98d-4955-a2b4-ca063b53fd4a"], "befores": [{"name": "gen_email", "status": "passed", "steps": [{"name": "Генерация email", "status": "passed", "start": 1712582169813, "stop": 1712582169813}], "start": 1712582169813, "stop": 1712582169813}], "start": 1712582169813, "stop": 1712582170633}
