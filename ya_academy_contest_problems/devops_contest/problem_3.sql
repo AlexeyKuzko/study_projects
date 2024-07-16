@@ -1,0 +1,3 @@
+SELECT DISTINCT name
+FROM courses
+ORDER BY name ASC;
