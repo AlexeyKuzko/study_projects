@@ -1,5 +1,5 @@
 # Study Projects repository
-## This repo contains my solutions to problems from various educational resources
+## This repo contains my solutions  (original contributions) to study problems from various educational resources
 ***
 ### [Yandex Praktikum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_praktikum_aqa_projects)
 Collection of study projects solved while learning at Yandex Practicum [course](https://practicum.yandex.ru/qa-automation-engineer-python/).
@@ -12,4 +12,6 @@ A single module with solutions for Code Basics' Python [practical course](https:
 ### [Code Basics: Go](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics_go)
 A single module with solutions for Code Basics' Go [practical course](https://code-basics.com/languages/go).
 ### [Stepik: Generation Python Advanced](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced)
-Collection of solved problems from Stepik [course](https://stepik.org/course/68343/info).
+Collection of solved problems from Stepik [course](https://stepik.org/course/68343).
+### [Stepik: Algorithms and Data Structures](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures)
+Collection of solved problems (in Python) from Stepik [course](https://stepik.org/course/181477).
