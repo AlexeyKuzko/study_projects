@@ -9,8 +9,8 @@ A subproject based on solved problems from [book](https://www.pearson.com/en-us/
 This subproject includes my solutions for problems published at Yandex Contest [platform](https://education.yandex.ru/handbook/python).
 ### [Code Basics: Python](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics_python)
 A single module with solutions for Code Basics' Python [practical course](https://code-basics.com/languages/python).
-### [Code Basics: Go](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics_go)
-A single module with solutions for Code Basics' Go [practical course](https://code-basics.com/languages/go).
+### [Code Basics: Go](https://code-basics.com/ru/languages/go)
+A bunch of solutions for problems from Code Basics' Go [practical course](https://code-basics.com/languages/go).
 ### [Stepik: Generation Python Advanced](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced)
 Collection of solved problems from Stepik [course](https://stepik.org/course/68343).
 ### [Stepik: Algorithms and Data Structures](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures)
