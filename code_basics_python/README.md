@@ -7,3 +7,9 @@
 ### #17-#25 for Variables
 ### #26-#29 for Deeper About Lines
 ### #30-#33 for Data types
+### #34-#40 for Functions calling
+### #41-#44 for Properties and methods
+### #45-#50 for Functions definition
+### #51-#56 for Logic
+### #57-#61 for Conditionals
+### #62-#72 for Loops
