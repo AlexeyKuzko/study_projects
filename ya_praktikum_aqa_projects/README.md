@@ -1,5 +1,5 @@
 # Yandex praktikum: Automation QA Engineer
-## This repo contains my study projects and problems solved while learning at Yandex praktikum [course](https://praktikum.yandex.ru/qa-automation-engineer-python/).
+## This subrepository consists of my study projects and problems solved while learning at Yandex Praktikum [course](https://praktikum.yandex.ru/qa-automation-engineer-python/).
 ***
 ### [Python basics](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_praktikum_aqa_projects/sprint_1_python_basics)
 Sprint 1 - a set of solved tasks that were dedicated to repeating the basics of language syntax.
