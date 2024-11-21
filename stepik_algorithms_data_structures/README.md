@@ -7,4 +7,5 @@ Set of solved steps (problems) on foundal principles of computing models, such a
 Another set of solved steps focused on the usage of basic data structures, including arrays, lists, stacks, queues, etc.
 ### [Sorting Algorithms](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/4_sorting_algorithms)
 Steps on sorting algorithms, such as buble sort, insertion sort, selection sort, counting sort, etc.
-
+### [Search Algorithms](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/5_search_algorithms)
+Steps on search algorithms, such as binary search, linear search, etc.
