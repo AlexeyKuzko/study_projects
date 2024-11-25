@@ -9,3 +9,5 @@ Another set of solved steps focused on the usage of basic data structures, inclu
 Steps on sorting algorithms, such as buble sort, insertion sort, selection sort, counting sort, etc.
 ### [Search Algorithms](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/5_search_algorithms)
 Steps on search algorithms, such as binary search, linear search, etc.
+### [Advanced Sorting Algorithms](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/6_advanced_sortings)
+Steps on advanced sorting algorithms, such as merge sort, quick sort, etc.
