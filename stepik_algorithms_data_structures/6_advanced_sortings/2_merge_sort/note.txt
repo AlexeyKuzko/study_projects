@@ -1,0 +1,1 @@
+# Just a reminder that merge sort lesson doesn't contains any code tasks
