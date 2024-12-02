@@ -11,3 +11,5 @@ Steps on sorting algorithms, such as buble sort, insertion sort, selection sort,
 Steps on search algorithms, such as binary search, linear search, etc.
 ### [Advanced Sorting Algorithms](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/6_advanced_sortings)
 Steps on advanced sorting algorithms, such as merge sort, quick sort, etc.
+### [Basic Dinamics](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/10_dinamics_basics)
+Steps on basic dinamics, such as linear dinamics, exponential dinamics, etc.
