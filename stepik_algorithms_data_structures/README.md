@@ -13,3 +13,7 @@ Steps on search algorithms, such as binary search, linear search, etc.
 Steps on advanced sorting algorithms, such as merge sort, quick sort, etc.
 ### [Basic Dinamics](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/10_dinamics_basics)
 Steps on basic dinamics, such as linear dinamics, exponential dinamics, etc.
+### [Graph theory foundamentals](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/12_graphs)
+Steps on graph theory foundamentals, such as graph representation, etc.
+### [Graph algorithms](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures/13_graph_algorithms)
+Steps on graph algorithms, such as DFS and BFS.
