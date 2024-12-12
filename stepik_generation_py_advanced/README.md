@@ -5,7 +5,7 @@ Collection of solved problems from Stepik [course](https://stepik.org/course/683
 * Part 2: Python basics - [done](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced/chapter_2)
 * Part 3: BoolType and NoneType - [done](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced/chapter_3)
 * Part 4: Lists comprehensions - [done](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced/chapter_4)
-* Part 5: Asessment for lists comprehensions and matrices - TBD
+* Part 5: Asessment for lists comprehensions and matrices - [done](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced/chapter_5)
 * Part 6: Tuples - TBD
 * Part 7: Asessment for Tuples - TBD
 * Part 8: Sets - TBD
