@@ -1,11 +1,13 @@
 # Study Projects repository
-## This repo contains my solutions  (original contributions) to study problems from various educational resources
+## This repo contains my solutions (original contributions) to study problems from various educational resources
 ***
 ### [Yandex Praktikum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_praktikum_aqa_projects)
 Collection of study projects solved while learning at Yandex Practicum [course](https://practicum.yandex.ru/qa-automation-engineer-python/).
-### [Stepik: Generation Python Advanced](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_generation_py_advanced)
+### [Stepik: Generation Python Beginner](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/beginner)
+Collection of solved problems from Stepik [course](https://stepik.org/course/58852).
+### [Stepik: Generation Python Advanced](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/advanced)
 Collection of solved problems from Stepik [course](https://stepik.org/course/68343).
-### [Stepik: Algorithms and Data Structures](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik_algorithms_data_structures)
+### [Stepik: Algorithms and Data Structures](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/algorithms_data_structures)
 Collection of solved problems (in Python) from Stepik [course](https://stepik.org/course/181477).
 ### [Starting Out with Python](https://github.com/AlexeyKuzko/study_projects/tree/main/sow_python_problems)
 A subproject based on solved problems from [book](https://www.pearson.com/en-us/subject-catalog/p/starting-out-with-python/P200000003356/9780136912330) Starting Out with Python by Tony Gaddis.
