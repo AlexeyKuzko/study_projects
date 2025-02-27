@@ -7,6 +7,8 @@ Collection of study projects solved while learning at Yandex Practicum [course](
 Collection of solved problems from Stepik [course](https://stepik.org/course/58852).
 ### [Stepik: Generation Python Advanced](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/advanced)
 Collection of solved problems from Stepik [course](https://stepik.org/course/68343).
+### [Stepik: Generation Python Professional](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/professional)
+Collection of solved problems from Stepik [course](https://stepik.org/course/82541).
 ### [Stepik: Algorithms and Data Structures](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/algorithms_data_structures)
 Collection of solved problems (in Python) from Stepik [course](https://stepik.org/course/181477).
 ### [Starting Out with Python](https://github.com/AlexeyKuzko/study_projects/tree/main/sow_python_problems)
