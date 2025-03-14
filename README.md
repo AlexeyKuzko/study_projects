@@ -3,8 +3,6 @@
 ***
 ### [Yandex Praktikum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_praktikum_aqa_projects)
 Collection of study projects solved while learning at Yandex Practicum [course](https://practicum.yandex.ru/qa-automation-engineer-python/).
-### [Stepik: Generation Python Beginner](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/beginner)
-Collection of solved problems from Stepik [course](https://stepik.org/course/58852).
 ### [Stepik: Generation Python Advanced](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/advanced)
 Collection of solved problems from Stepik [course](https://stepik.org/course/68343).
 ### [Stepik: Generation Python Professional](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/professional)
