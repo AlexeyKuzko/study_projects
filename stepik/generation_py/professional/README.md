@@ -3,7 +3,7 @@ Collection of solved problems from Stepik [course](https://stepik.org/course/825
 * Part 1: About the course - text only
 * Part 2: Reviewing Python basics
   * 2.1 Part 1 - [done](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/professional/chapter_2/part_2_1)
-  * 2.2 Part 2
+  * 2.2 Part 2 - [done](https://github.com/AlexeyKuzko/study_projects/tree/main/stepik/generation_py/professional/chapter_2/part_2_2)
 * Part 3: Working with date and time
   * 3.1 Data types date and time. Part 1
   * 3.2 Data types date and time. Part 2
