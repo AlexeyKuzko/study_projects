@@ -13,9 +13,9 @@ Collection of solved problems (in Python) from Stepik [course](https://stepik.or
 A subproject based on solved problems from [book](https://www.pearson.com/en-us/subject-catalog/p/starting-out-with-python/P200000003356/9780136912330) Starting Out with Python by Tony Gaddis.
 ### [Yandex Academy: Python Handbook](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_academy_contest_problems)
 This subproject includes my solutions for problems published at Yandex Contest [platform](https://education.yandex.ru/handbook/python).
-### [Code Basics: Python](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics_python)
+### [Code Basics: Python](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics/python)
 A single module with solutions for Code Basics' Python [practical course](https://code-basics.com/languages/python).
-### [Code Basics: Go](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics_go)
+### [Code Basics: Go](https://github.com/AlexeyKuzko/study_projects/tree/main/code_basics/golang)
 A bunch of solutions for problems from Code Basics' Go [practical course](https://code-basics.com/languages/go).
 
 
