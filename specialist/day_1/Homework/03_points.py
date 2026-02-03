@@ -14,6 +14,14 @@ points = [Point(2, 7), Point(12, 7), Point(5, -2), Point(10, -16), Point(-12, 0)
 
 # Задание: найдите точку наиболее удаленную от начала координат и выведите ее координаты
 
-# TODO: your code here...
+origin = Point(0, 0)
+farthest_point = points[0]
+max_distance = distance(origin, points[0])
 
-print("Координаты наиболее удаленной точки = ", ...)
+for point in points:
+    d = distance(origin, p)
+    if d > max_distance:
+        max_distance = d
+        farthest_point = point
+
+print("Координаты наиболее удаленной точки = ", farthest_point.x, farthest_point.y)
