@@ -19,7 +19,7 @@ farthest_point = points[0]
 max_distance = distance(origin, points[0])
 
 for point in points:
-    d = distance(origin, p)
+    d = distance(origin, point)
     if d > max_distance:
         max_distance = d
         farthest_point = point

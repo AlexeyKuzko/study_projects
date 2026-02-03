@@ -16,7 +16,7 @@ class Triangle:
 
     @property
     def sides(self):
-        return (self.p1.distance(self.p2), self.p2.distance(self.p3), self.p3.distance(self.p1))
+        return self.p1.distance(self.p2), self.p2.distance(self.p3), self.p3.distance(self.p1)
 
     def perimeter(self):
         a, b, c = self.sides
