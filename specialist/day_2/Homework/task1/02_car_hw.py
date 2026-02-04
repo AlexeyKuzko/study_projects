@@ -7,7 +7,7 @@ class Car:
         self.gas_per_100km = gas_per_100km  # "расход топлива на 100 км" (gas_per_100km)
         self.mileage = 0  # "пробег" (mileage)
 
-    def fill(self, liters):  #  метод "залить столько-то литров в бак"
+    def fill(self, liters: int | float):  #  метод "залить столько-то литров в бак"
         if self.gas + liters <= self.capacity:  # должна учитываться вместительность бака
             self.gas += liters
             print(f"Залили {liters} литров бензина")
@@ -15,7 +15,7 @@ class Car:
             print(f"Бак полон, {self.gas + liters - self.capacity} лишних литров")  # выводим сообщение о лишних литрах
             self.gas = self.capacity  # но бак заполняется полностью
 
-    def ride(self, km):  # метод "проехать сколько-то км"
+    def ride(self, km: int | float):  # метод "проехать сколько-то км"
         max_km = self.gas / self.gas_per_100km * 100
 
         if km <= max_km:
