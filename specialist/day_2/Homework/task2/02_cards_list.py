@@ -1,14 +1,25 @@
-class Card:
-    pass
-    # TODO: сюда копируем реализацию класса карты из предыдущего задания
+from random import shuffle
+from sol_01_card import Card
 
 
-hearts_cards = []
-# TODO-1: добавьте в список hearts_cards все червовые карты(от 2-ки до туза)
+class Deck:
+    VALUES = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+    SUITS = ['♠', '♣', '♦', '♥']
 
-diamonds_cards = []
-# TODO-2: добавьте в список diamonds_cards все бубновые карты(от туза до 2-ки)
+    def __init__(self):
+        self.cards = []
+        for suit in self.SUITS:
+            for value in self.VALUES:
+                self.cards.append(Card(value, suit))
 
-# TODO-3: выведите все карты из списка hearts_cards в терминал через запятую в одну строку:
-# Пример вывода: 2♥, 3♥, 4♥ ... A♥
+    def shuffle(self):
+        shuffle(self.cards)
 
+    def draw(self, x: int):
+        taken = self.cards[:x]
+        self.cards = self.cards[x:]
+        return taken
+
+    def show(self):
+        cards_str = ", ".join(card.to_str() for card in self.cards)
+        print(f"deck[{len(self.cards)}]: {cards_str}")
