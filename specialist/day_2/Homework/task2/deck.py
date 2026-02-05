@@ -1,5 +1,6 @@
-from card import SUITS, VALUES, SUITS_UNI, Card
 import random
+
+from card import SUITS, VALUES, Card
 
 
 class Deck:
