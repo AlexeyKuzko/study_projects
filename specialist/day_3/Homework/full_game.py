@@ -1,5 +1,6 @@
 """Создадим консольную игру “Дурака без козырей”"""
 import random
+# константы и классы карты\колоды перепечатаны из предыдущей работы, но можно было бы импортировать их
 
 VALUES = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A')
 SUITS = ('Spades', 'Clubs', 'Diamonds', 'Hearts')
@@ -79,112 +80,95 @@ class Deck:
 
 
 class Player:
+    """Класс игрока, экземплярами которого будут играющие"""
+
     def __init__(self, name: str, cards: list[Card]):
+        """Конструктор игрока, сохраняем имя и выдаем карты на руку"""
         self.name = name
         self.hand = cards
 
-    def sort_hand(self):
-        """Сортировка карт по старшинству"""
+    def _sort_hand(self):
+        """Сортировка по 'старшенству' для начала игры и аккуратной визуализации"""
         self.hand.sort()
 
+    def get_lowest_card(self) -> Card:
+        """Возвращает самую маленькую карту по старшинству в начале хода"""
+        self._sort_hand()
+        return self.hand[0]
+
     def show_hand(self):
+        """Метод, чтобы выводить в консоль максимально наглядную визуализацию данных ходов"""
         return ", ".join(str(card) for card in self.hand)
 
+    def try_beat(self, attack_card: Card) -> Card | None:
+        """Игрок пытается побить карту атакующего, если у него есть такая же масть, но значением больше"""
+        # нужна карта той же масти, что и атакующая, но больше по номиналу
+        beatable = [card for card in self.hand if card.equal_suit(attack_card) and card.more(attack_card)]
+        if not beatable:
+            return None
+        if len(beatable) == 1:  # если есть несколько подходящих карт, берем наименьшую по номиналу
+            return beatable[0]
+        min_card = beatable[0]
+        for card in beatable[1:]:
+            if card.less(min_card):
+                min_card = card
+        return min_card
+
     def has_cards(self) -> bool:
+        """Проверяем, остались ли карты на руке (если нет, вернется False и игра закончится)"""
         return len(self.hand) > 0
 
     def take_cards(self, cards: list[Card]):
+        """Если игрок не может побить карту, то забирает ее себе в руку"""
         self.hand.extend(cards)
-        self.sort_hand()
+        self._sort_hand()
 
     def remove_card(self, card: Card):
+        """Удаляем карту из руки (при атаке или успешной защите)"""
         self.hand.remove(card)
 
-    def get_lowest_card(self) -> Card:
-        """Самая маленькая карта"""
-        self.sort_hand()
-        return self.hand[0]
-
-    def try_beat(self, attack_card: Card) -> Card | None:
-        possible = [
-            card for card in self.hand
-            if card.equal_suit(attack_card) and card.more(attack_card)
-        ]
-
-        if not possible:
-            return None
-
-        # найдём минимальную вручную через less
-        min_card = possible[0]
-        for card in possible[1:]:
-            if card.less(min_card):
-                min_card = card
-
-        return min_card
-
     def refill_from_deck(self, deck: Deck, limit: int = 10):
-        """Добор карт до 10"""
-        while len(self.hand) < limit and deck.cards:
-            self.hand.append(deck.draw(1)[0])
-        self.sort_hand()
+        """Реализовать возможность добрать карты из колоды после того, как один из игроков отбился/взял в руку"""
+        while len(self.hand) < limit and deck.cards:  # пока меньше лимита руки и еще есть карты в колоде
+            self.hand.append(deck.draw(1)[0])  # добавляем в руку сверху колоды (колоду уменьшаем)
+        self._sort_hand()
 
+if __name__ == "__main__":
+    # Ставим стол; берем колоду и замешиваем ее; усаживаем за стол двух игроков, которые берут по 10 карт
+    table = []
+    deck = Deck()
+    deck.shuffle()
+    attacker, defender = Player("Алексей", deck.draw(10)), Player("Вадим Викторович", deck.draw(10))
+    # Цикл игры идет до тех пор, пока у кого-нибудь из игроков не останется ни одной карты
+    while attacker.has_cards() and defender.has_cards():
+        print(f"\nАтакует игрок {attacker.name}")
+        print(f"Карты атакующего ({attacker.name}): {attacker.show_hand()}")
+        print(f"Карты отбивающегося ({defender.name}): {defender.show_hand()}")
 
-deck = Deck()
-deck.shuffle()
+        attack_card = attacker.get_lowest_card()  # атакующий выкладывает наименьшую карту с руки
+        attacker.remove_card(attack_card)
+        table = [attack_card]
+        print(f"{attacker.name} ходит картой {attack_card}")
 
-player1 = Player("Игрок-1", deck.draw(10))
-player2 = Player("Игрок-2", deck.draw(10))
+        beat_card = defender.try_beat(attack_card) # защищающийся пытается отбиться
+        if beat_card:
+            defender.remove_card(beat_card)
+            table.append(beat_card)
+            print(f"{defender.name} отбивается картой {beat_card}")
+            attacker, defender = defender, attacker # если отбился, меняемся ролями
+        else:
+            print(f"{defender.name} не смог побить и забирает карты")
+            defender.take_cards(table)
 
-attacker = player1
-defender = player2
+        attacker.refill_from_deck(deck)  # доборы на руку из колоды
+        defender.refill_from_deck(deck)
+        table.clear()
 
-table = []
-
-
-# --- Игровой цикл ---
-
-while player1.has_cards() and player2.has_cards():
-
-    print(f"\nХодит {attacker.name}")
-    print(f"{attacker.name}: {attacker.show_hand()}")
-    print(f"{defender.name}: {defender.show_hand()}")
-
-    # 1. Атакующий кладёт самую маленькую карту
-    attack_card = attacker.get_lowest_card()
-    attacker.remove_card(attack_card)
-    table = [attack_card]
-
-    print(f"{attacker.name} ходит: {attack_card}")
-
-    # 2. Защитник пытается побить
-    beat_card = defender.try_beat(attack_card)
-
-    if beat_card is None:
-        # 3. Не смог побить → забирает карты
-        print(f"{defender.name} не смог побить и забирает карты")
-        defender.take_cards(table)
+    print("\nИгра окончена!")
+    if not attacker.has_cards() and not defender.has_cards():
+        print("Ничья, победила дружба!")
+    elif not attacker.has_cards():
+        print(f"Победил {attacker.name}!")
     else:
-        defender.remove_card(beat_card)
-        table.append(beat_card)
-        print(f"{defender.name} бьёт картой: {beat_card}")
-
-        # 5. Если отбился — меняемся ролями
-        attacker, defender = defender, attacker
-
-    # 7. Добор карт
-    attacker.refill_from_deck(deck)
-    defender.refill_from_deck(deck)
-
-    table.clear()
-
-
-# --- Завершение игры ---
-
-print("\nИгра окончена!")
-
-if not player1.has_cards() and not player2.has_cards():
-    print("Ничья!")
-elif not player1.has_cards():
-    print("Победил Игрок-1!")
-else:
-    print("Победил Игрок-2!")
+        print(f"Победил {defender.name}!")
+    
