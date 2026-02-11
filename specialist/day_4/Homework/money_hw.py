@@ -49,7 +49,7 @@ class Money:
         return Money(0, result)
 
     def convert(self, currency: str):
-        """Ковертация валют"""
+        """Конвертация валют"""
         url = 'https://www.cbr-xml-daily.ru/daily_json.js'
         response = requests.get(url)
         data_dict = json.loads(response.text)
