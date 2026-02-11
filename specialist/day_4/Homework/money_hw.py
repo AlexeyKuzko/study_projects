@@ -1,6 +1,8 @@
-from functools import total_ordering
-import requests
 import json
+from functools import total_ordering
+
+import requests
+
 
 @total_ordering
 class Money:
