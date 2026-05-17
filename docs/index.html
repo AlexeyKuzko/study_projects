@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta
+      name="description"
+      content="Навигация по учебному репозиторию Study Projects: курсы, решенные задачи, автотесты, алгоритмы, Python и Go."
+    >
+    <meta property="og:title" content="Study Projects">
+    <meta
+      property="og:description"
+      content="Интерактивная карта учебных проектов, курсов и решенных задач."
+    >
+    <meta property="og:type" content="website">
+    <title>Study Projects | Учебная карта</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#catalog">К каталогу проектов</a>
+
+    <header class="site-header">
+      <nav class="topbar" aria-label="Главная навигация">
+        <a class="brand" href="#top" aria-label="Study Projects">
+          <span class="brand-mark" aria-hidden="true">SP</span>
+          <span>Study Projects</span>
+        </a>
+        <div class="nav-links">
+          <a href="#overview">Обзор</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#skills">Навыки</a>
+          <a href="#run">Запуск</a>
+        </div>
+        <a class="repo-link" href="https://github.com/AlexeyKuzko/study_projects">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Учебный репозиторий</p>
+          <h1 id="intro-title">Карта пройденных курсов, задач и проектов</h1>
+          <p class="lead">
+            Репозиторий собран из решений по Python, Go, алгоритмам и автоматизации тестирования.
+            Эта страница превращает набор папок в понятный маршрут: что пройдено, где лежит код,
+            какие сценарии покрыты тестами и какие темы уже отработаны.
+          </p>
+          <div class="intro-actions" aria-label="Быстрые действия">
+            <a class="button primary" href="#catalog">Смотреть каталог</a>
+            <a class="button secondary" href="PROJECT_INDEX.md">Открыть индекс</a>
+          </div>
+        </div>
+
+        <figure class="repo-map">
+          <img src="assets/repo-map.svg" alt="Визуальная карта основных учебных направлений репозитория">
+        </figure>
+      </section>
+
+      <section id="overview" class="section overview" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Состояние проекта</p>
+          <h2 id="overview-title">Обзор прогресса</h2>
+        </div>
+        <div class="metrics" aria-label="Ключевые показатели">
+          <article class="metric">
+            <span class="metric-value" data-stat="codeFiles">1175</span>
+            <span class="metric-label">файлов с кодом</span>
+          </article>
+          <article class="metric">
+            <span class="metric-value" data-stat="testFiles">41</span>
+            <span class="metric-label">тестовый модуль</span>
+          </article>
+          <article class="metric">
+            <span class="metric-value" data-stat="tracks">8</span>
+            <span class="metric-label">учебных треков</span>
+          </article>
+          <article class="metric">
+            <span class="metric-value" data-stat="readmes">19</span>
+            <span class="metric-label">README и описаний</span>
+          </article>
+        </div>
+
+        <div class="progress-board" aria-label="Направления обучения">
+          <article class="progress-row">
+            <div>
+              <h3>Python core</h3>
+              <p>Синтаксис, функции, коллекции, ООП, файлы, исключения.</p>
+            </div>
+            <div class="progress-line" aria-hidden="true"><span style="width: 92%"></span></div>
+          </article>
+          <article class="progress-row">
+            <div>
+              <h3>Автоматизация QA</h3>
+              <p>pytest, Selenium, Page Object, API-тесты, Allure.</p>
+            </div>
+            <div class="progress-line" aria-hidden="true"><span style="width: 86%"></span></div>
+          </article>
+          <article class="progress-row">
+            <div>
+              <h3>Алгоритмы</h3>
+              <p>Сложность, структуры данных, сортировки, поиск, динамика, графы.</p>
+            </div>
+            <div class="progress-line" aria-hidden="true"><span style="width: 78%"></span></div>
+          </article>
+          <article class="progress-row">
+            <div>
+              <h3>Go basics</h3>
+              <p>Основы языка, коллекции, строки, методы, конкурентность.</p>
+            </div>
+            <div class="progress-line" aria-hidden="true"><span style="width: 58%"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="catalog" class="section catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <p class="eyebrow">Навигация</p>
+          <h2 id="catalog-title">Каталог учебных разделов</h2>
+          <p>
+            Фильтры и поиск работают по названию курса, темам, папкам и реализованным задачам.
+            В каждой карточке есть прямой переход к исходникам.
+          </p>
+        </div>
+
+        <div class="catalog-controls" aria-label="Фильтры каталога">
+          <label class="search-field">
+            <span>Поиск по проекту</span>
+            <input id="searchInput" type="search" placeholder="Например: pytest, графы, Go, POM" autocomplete="off">
+          </label>
+          <div class="filters" role="list" aria-label="Фильтры по направлению">
+            <button class="filter is-active" type="button" data-filter="all">Все</button>
+            <button class="filter" type="button" data-filter="qa">QA</button>
+            <button class="filter" type="button" data-filter="python">Python</button>
+            <button class="filter" type="button" data-filter="algorithms">Алгоритмы</button>
+            <button class="filter" type="button" data-filter="go">Go</button>
+          </div>
+        </div>
+
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+        <div class="course-grid" id="courseGrid"></div>
+      </section>
+
+      <section id="skills" class="section skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Демонстрация материала</p>
+          <h2 id="skills-title">Что уже отработано</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill">
+            <h3>Тестирование веб-приложений</h3>
+            <p>UI-сценарии Stellar Burgers и Яндекс Самоката, Page Object, фикстуры, локаторы, отчеты Allure.</p>
+          </article>
+          <article class="skill">
+            <h3>API-тестирование</h3>
+            <p>Проверки создания курьера, логина, создания заказов и получения списков заказов через requests.</p>
+          </article>
+          <article class="skill">
+            <h3>Unit-тесты</h3>
+            <p>Покрытие учебных приложений pytest-тестами, фикстуры, проверки бизнес-логики и отчетность покрытия.</p>
+          </article>
+          <article class="skill">
+            <h3>Алгоритмическая база</h3>
+            <p>Структуры данных, сортировки, поиск, динамическое программирование, основы графов и обходы.</p>
+          </article>
+          <article class="skill">
+            <h3>Python ООП</h3>
+            <p>Классы, наследование, полиморфизм, инкапсуляция, специальные методы и работа с исключениями.</p>
+          </article>
+          <article class="skill">
+            <h3>Go fundamentals</h3>
+            <p>Синтаксис Go, массивы, слайсы, карты, строки, методы, интерфейсы и конкурентность.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="run" class="section run" aria-labelledby="run-title">
+        <div class="section-heading">
+          <p class="eyebrow">Как пользоваться</p>
+          <h2 id="run-title">Запуск и публикация</h2>
+        </div>
+        <div class="run-layout">
+          <article class="run-block">
+            <h3>Локально</h3>
+            <p>Страница статическая и открывается напрямую из файла.</p>
+            <pre><code>open docs/index.html</code></pre>
+          </article>
+          <article class="run-block">
+            <h3>GitHub Pages</h3>
+            <p>Workflow публикует содержимое папки <code>docs</code> при push в <code>main</code>.</p>
+            <pre><code>Settings -> Pages -> Source: GitHub Actions</code></pre>
+          </article>
+          <article class="run-block">
+            <h3>Тесты проектов</h3>
+            <p>В репозитории уже есть общий runner для подпроектов с зависимостями.</p>
+            <pre><code>bash scripts/ci_run_all_tests.sh</code></pre>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Study Projects by Alexey Kuzko. Собрано из реальной структуры репозитория.</p>
+      <a href="#top">Наверх</a>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

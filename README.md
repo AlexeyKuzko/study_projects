@@ -3,6 +3,14 @@
 A collection of my educational projects and problem solutions from different learning platforms and courses.  
 Here you’ll find practical tasks I completed while studying Python, algorithms, and software testing — each folder reflects a specific course or resource.
 
+## GitHub Pages
+
+The repository now has a portfolio-style project page with navigation, progress summary, course filters, and direct links to the solved tasks:
+
+- GitHub Pages URL: https://alexeykuzko.github.io/study_projects/
+- Local entry point: [docs/index.html](docs/index.html)
+- Project index: [docs/PROJECT_INDEX.md](docs/PROJECT_INDEX.md)
+
 ***
 
 ### [Yandex Praktikum: Automation QA Engineer](https://github.com/AlexeyKuzko/study_projects/tree/main/ya_praktikum_aqa_projects)

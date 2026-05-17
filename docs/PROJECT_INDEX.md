@@ -2,6 +2,11 @@
 
 This document provides a quick catalog of subprojects in this repository and direct links to their READMEs and tests.
 
+Website entry point
+- GitHub Pages source: docs/index.html
+- Published URL after Pages deployment: https://alexeykuzko.github.io/study_projects/
+- Deployment workflow: .github/workflows/pages.yml
+
 - ya_praktikum_aqa_projects
   - sprint_5_ui_testing: README and tests under ya_praktikum_aqa_projects/sprint_5_ui_testing
   - sprint_6_page_object: README and tests under ya_praktikum_aqa_projects/sprint_6_page_object

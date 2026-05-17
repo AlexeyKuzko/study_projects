@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Карта учебных направлений Study Projects</title>
+  <desc id="desc">Визуальная схема основных разделов репозитория: QA, Python, алгоритмы, Go и учебные материалы.</desc>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="40" y="40" width="1120" height="680" rx="8" fill="#f6f7fb" stroke="#d8e0ea"/>
+  <text x="82" y="102" fill="#132033" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Study Projects</text>
+  <text x="82" y="142" fill="#627084" font-family="Inter, Arial, sans-serif" font-size="22">навигационная карта курсов, задач и тестовых проектов</text>
+
+  <line x1="118" y1="210" x2="1080" y2="210" stroke="#d8e0ea" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="180" cy="210" r="20" fill="#235fca"/>
+  <circle cx="360" cy="210" r="20" fill="#16805e"/>
+  <circle cx="540" cy="210" r="20" fill="#a95b12"/>
+  <circle cx="720" cy="210" r="20" fill="#6d4eb2"/>
+  <circle cx="900" cy="210" r="20" fill="#17478f"/>
+  <circle cx="1040" cy="210" r="20" fill="#16805e"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="82" y="275" width="300" height="142" rx="8" fill="#ffffff" stroke="#d8e0ea"/>
+    <text x="108" y="318" fill="#235fca" font-size="18" font-weight="800">QA Automation</text>
+    <text x="108" y="353" fill="#132033" font-size="34" font-weight="800">8 спринтов</text>
+    <text x="108" y="385" fill="#627084" font-size="18">pytest, Selenium, API, POM</text>
+
+    <rect x="450" y="275" width="300" height="142" rx="8" fill="#ffffff" stroke="#d8e0ea"/>
+    <text x="476" y="318" fill="#16805e" font-size="18" font-weight="800">Python Practice</text>
+    <text x="476" y="353" fill="#132033" font-size="34" font-weight="800">370+ решений</text>
+    <text x="476" y="385" fill="#627084" font-size="18">Stepik, Yandex Academy, book</text>
+
+    <rect x="818" y="275" width="300" height="142" rx="8" fill="#ffffff" stroke="#d8e0ea"/>
+    <text x="844" y="318" fill="#a95b12" font-size="18" font-weight="800">Algorithms</text>
+    <text x="844" y="353" fill="#132033" font-size="34" font-weight="800">125 файлов</text>
+    <text x="844" y="385" fill="#627084" font-size="18">сортировки, поиск, графы</text>
+
+    <rect x="82" y="465" width="300" height="142" rx="8" fill="#ffffff" stroke="#d8e0ea"/>
+    <text x="108" y="508" fill="#6d4eb2" font-size="18" font-weight="800">Go Basics</text>
+    <text x="108" y="543" fill="#132033" font-size="34" font-weight="800">35 решений</text>
+    <text x="108" y="575" fill="#627084" font-size="18">коллекции, методы, concurrency</text>
+
+    <rect x="450" y="465" width="300" height="142" rx="8" fill="#ffffff" stroke="#d8e0ea"/>
+    <text x="476" y="508" fill="#17478f" font-size="18" font-weight="800">Test Evidence</text>
+    <text x="476" y="543" fill="#132033" font-size="34" font-weight="800">41 тест</text>
+    <text x="476" y="575" fill="#627084" font-size="18">unit, UI, API, дипломы</text>
+
+    <rect x="818" y="465" width="300" height="142" rx="8" fill="#ffffff" stroke="#d8e0ea"/>
+    <text x="844" y="508" fill="#16805e" font-size="18" font-weight="800">Repository Docs</text>
+    <text x="844" y="543" fill="#132033" font-size="34" font-weight="800">19 README</text>
+    <text x="844" y="575" fill="#627084" font-size="18">описания, запуск, структура</text>
+  </g>
+</svg>
