@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 2 Arrays / Step 7."""
+
+
 def count_number():
     # Ввод количества чисел
     n = int(input())
@@ -20,5 +23,6 @@ def count_number():
 
     # Вывод количества вхождений искомого числа
     print(count_dict.get(number, 0))
+
 
 count_number()

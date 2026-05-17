@@ -1,3 +1,5 @@
+"""Base Page support module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3 / Pages."""
+
 import allure
 
 from selenium.webdriver import ActionChains
@@ -8,6 +10,8 @@ from locators import BasePageLocators
 
 
 class BasePage:
+    """Base page object with shared browser interaction helpers."""
+
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
@@ -45,7 +49,8 @@ class BasePage:
     def move_element(self, source_locator, target_locator):
         source_elem = self.find_element(source_locator)
         target_elem = self.find_element(target_locator)
-        self.driver.execute_script("""
+        self.driver.execute_script(
+            """
             var source = arguments[0];
             var target = arguments[1];
             var evt = document.createEvent("DragEvent");
@@ -63,7 +68,10 @@ class BasePage:
             evt = document.createEvent("DragEvent");
             evt.initMouseEvent("dragend", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
             source.dispatchEvent(evt);
-        """, source_elem, target_elem)
+        """,
+            source_elem,
+            target_elem,
+        )
 
     @allure.step("Нажать в хэдере ссылку Конструктор")
     def press_constructor_link(self):

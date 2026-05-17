@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 2 Arrays / Step 10."""
+
+
 def transform_array():
     # Ввод массива чисел
     numbers = list(map(int, input().split()))
@@ -14,6 +17,7 @@ def transform_array():
             numbers[i] -= neg_count
 
     # Вывести преобразованный массив
-    print(' '.join(map(str, numbers)))
+    print(" ".join(map(str, numbers)))
+
 
 transform_array()

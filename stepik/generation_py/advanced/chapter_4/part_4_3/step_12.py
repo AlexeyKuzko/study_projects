@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 3 / Step 12."""
+
+
 def pack_duplicates(s):
     s = s.split()
     result = []

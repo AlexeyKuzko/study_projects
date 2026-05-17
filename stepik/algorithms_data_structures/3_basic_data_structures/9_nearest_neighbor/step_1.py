@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 9 Nearest Neighbor / Step 1."""
+
 import sys
 
 input = sys.stdin.read

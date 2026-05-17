@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 5 / Step 9."""
+
 n = int(input())
 
 matrix = [list(map(int, input().split())) for _ in range(n)]
@@ -27,9 +29,7 @@ if sum(matrix[i][n - i - 1] for i in range(n)) != expected_sum:
     exit()
 
 # Проверяем, что все числа от 1 до n^2 присутствуют ровно один раз
-if sorted([matrix[i][j] for i in range(n) for j in range(n)]) != list(
-    range(1, n * n + 1)
-):
+if sorted([matrix[i][j] for i in range(n) for j in range(n)]) != list(range(1, n * n + 1)):
     print("NO")
     exit()
 

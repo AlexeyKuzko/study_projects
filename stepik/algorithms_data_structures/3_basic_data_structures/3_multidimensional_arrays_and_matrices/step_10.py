@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 3 Multidimensional Arrays And Matrices / Step 10."""
+
 n, m = map(int, input().split())
 a = [[0] * m for _ in range(n)]
 num = 0

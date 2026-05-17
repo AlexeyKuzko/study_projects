@@ -1,3 +1,5 @@
+"""Data module for Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 import random
 import string
 
@@ -18,7 +20,5 @@ class TestCredentials:
     def bad_password(pass_len=5):
         generated_password = ""
         for i in range(int(pass_len)):
-            generated_password += random.choice(
-                string.ascii_letters + string.digits + string.punctuation
-            )
+            generated_password += random.choice(string.ascii_letters + string.digits + string.punctuation)
         return generated_password

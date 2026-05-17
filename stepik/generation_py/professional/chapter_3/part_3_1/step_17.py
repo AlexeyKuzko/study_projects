@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 3 / Part 3 1 / Step 17."""
+
 from datetime import date
 
 hurricane_andrew = date(1992, 8, 24)

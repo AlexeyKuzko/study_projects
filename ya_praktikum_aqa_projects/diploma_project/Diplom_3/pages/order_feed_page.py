@@ -1,3 +1,5 @@
+"""Order Feed Page support module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3 / Pages."""
+
 import allure
 
 from pages.base_page import BasePage
@@ -5,7 +7,6 @@ from locators import OrderFeedPageLocators as order_locators
 
 
 class OrderFeedPage(BasePage):
-
     @allure.step("Кликнуть на заказ")
     def press_order_link(self):
         self.press_element(order_locators.ORDER_IN_FEED_LINK)

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 1 / Step 15."""
+
 from functools import cmp_to_key
 
 

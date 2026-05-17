@@ -1,8 +1,11 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 1 / Step 12."""
+
+
 def index_of_nearest(numbers, number):
     if not numbers:
         return -1
 
-    min_diff = float('inf')
+    min_diff = float("inf")
     min_index = -1
 
     for i, num in enumerate(numbers):

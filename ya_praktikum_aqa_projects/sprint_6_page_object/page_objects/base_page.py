@@ -1,3 +1,5 @@
+"""Base Page support module for Yandex Praktikum Automation QA projects: Sprint 6 Page Object / Page Objects."""
+
 import allure
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
@@ -6,6 +8,7 @@ from data import Urls
 
 
 class BasePage:
+    """Base page object with shared browser interaction helpers."""
 
     def __init__(self, driver):
         self.driver = driver
@@ -37,15 +40,11 @@ class BasePage:
 
     @allure.step("Дождаться загрузки элемента")
     def wait_until_element_is_visible(self, locator):
-        return WebDriverWait(self.driver, 5).until(
-            expected_conditions.presence_of_element_located(locator)
-        )
+        return WebDriverWait(self.driver, 5).until(expected_conditions.presence_of_element_located(locator))
 
     @allure.step("Дождаться, чтобы на элемент можно было нажать")
     def wait_until_element_is_clickable(self, locator):
-        return WebDriverWait(self.driver, 5).until(
-            expected_conditions.element_to_be_clickable(locator)
-        )
+        return WebDriverWait(self.driver, 5).until(expected_conditions.element_to_be_clickable(locator))
 
     @allure.step("Принять cookies")
     def click_cookie_consent(self):

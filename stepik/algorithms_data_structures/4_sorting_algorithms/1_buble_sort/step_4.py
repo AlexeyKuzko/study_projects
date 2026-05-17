@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 4 Sorting Algorithms / 1 Buble Sort / Step 4."""
+
+
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n - 1):

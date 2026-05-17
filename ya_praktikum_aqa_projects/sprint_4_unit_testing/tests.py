@@ -1,3 +1,5 @@
+"""Solution for Yandex Praktikum Automation QA projects: Sprint 4 Unit Testing / Tests."""
+
 import pytest
 from main import BooksCollector
 
@@ -40,7 +42,11 @@ class TestBooksCollector:
 
     @pytest.mark.parametrize(
         "name, genre",
-        [("Дюна", "Фантастика"), ("Сияние", "Ужасы"), ("Убийство в Восточном экспрессе", "Детективы")],
+        [
+            ("Дюна", "Фантастика"),
+            ("Сияние", "Ужасы"),
+            ("Убийство в Восточном экспрессе", "Детективы"),
+        ],
     )
     def test_set_book_genre_name_equals_genre_true(self, name, genre, collector):
         collector.add_new_book(name)

@@ -1,3 +1,5 @@
+"""Pytest fixtures for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 1."""
+
 import pytest
 
 from praktikum.burger import Burger

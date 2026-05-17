@@ -1,3 +1,5 @@
+"""Pytest fixtures for Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 import pytest
 import data
 from selenium import webdriver

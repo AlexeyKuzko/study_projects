@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 1 Linear Search / Step 6."""
+
+
 def find_smallest_duplicate(arr):
     """
     Функция находит наименьший элемент, который повторяется в списке arr.

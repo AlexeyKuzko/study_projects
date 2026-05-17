@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 1 / 10 Step."""
+
 n = int(input())
 k = int(input())
 

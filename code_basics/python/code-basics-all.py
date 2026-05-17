@@ -1,3 +1,5 @@
+"""Solution for Code Basics course solutions: Python / Code Basics All."""
+
 # 1
 
 print("Hello, World!")

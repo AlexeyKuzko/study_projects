@@ -1,3 +1,5 @@
+"""Constructor Page support module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3 / Pages."""
+
 import allure
 
 from pages.base_page import BasePage
@@ -5,6 +7,8 @@ from locators import BasePageLocators, ConstructorPageLocators
 
 
 class ConstructorPage(BasePage):
+    """Page object for burger constructor interactions."""
+
     def __init__(self, driver):
         super().__init__(driver)
 

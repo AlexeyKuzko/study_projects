@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 3 Multidimensional Arrays And Matrices / Step 5."""
+
+
 def create_minesweeper_field(N, M, W, mines):
     # Создаем поле, заполненное нулями
     field = [[0 for _ in range(M)] for _ in range(N)]

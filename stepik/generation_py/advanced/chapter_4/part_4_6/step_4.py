@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 6 / Step 4."""
+
 n, m = map(int, input().split())
 
 for i in range(1, n + 1):

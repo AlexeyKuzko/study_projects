@@ -1,3 +1,5 @@
+"""Automated test cases for Register in Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 import data
 from locators import *
 from selenium.webdriver.support import expected_conditions
@@ -12,9 +14,7 @@ class TestRegister:
         driver.find_element(*Locators.REG_EMAIL_INPUT).send_keys(data.TestCredentials.EMAIL)
         driver.find_element(*Locators.REG_PASSWORD_INPUT).send_keys(data.TestCredentials.PASSWORD)
         driver.find_element(*Locators.REG_BUTTON).click()
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.LOGIN_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.LOGIN_BUTTON))
 
         assert data.TestUrls.LOGIN_PAGE == driver.current_url
 
@@ -26,7 +26,4 @@ class TestRegister:
         driver.find_element(*Locators.REG_PASSWORD_INPUT).send_keys(data.TestCredentials.bad_password())
         driver.find_element(*Locators.REG_BUTTON).click()
 
-        assert (
-            driver.find_element(*Locators.WRONG_PASSWORD_ERROR).text
-            == "Некорректный пароль"
-        )
+        assert driver.find_element(*Locators.WRONG_PASSWORD_ERROR).text == "Некорректный пароль"

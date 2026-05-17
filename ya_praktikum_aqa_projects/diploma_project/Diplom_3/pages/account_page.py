@@ -1,3 +1,5 @@
+"""Account Page support module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3 / Pages."""
+
 import allure
 
 from pages.base_page import BasePage
@@ -5,6 +7,7 @@ from locators import AccountPageLocators
 
 
 class AccountPage(BasePage):
+    """Page object for account page interactions."""
 
     @allure.step("Нажать кнопку «Выход»")
     def press_logout_button(self):

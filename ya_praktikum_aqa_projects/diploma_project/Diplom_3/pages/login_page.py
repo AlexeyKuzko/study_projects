@@ -1,3 +1,5 @@
+"""Login Page support module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3 / Pages."""
+
 import allure
 
 from pages.base_page import BasePage
@@ -5,6 +7,7 @@ from locators import BasePageLocators, LoginPageLocators
 
 
 class LoginPage(BasePage):
+    """Page object for login page interactions."""
 
     @allure.step("Нажать кнопку Восстановить пароль")
     def press_reset_password_link(self):

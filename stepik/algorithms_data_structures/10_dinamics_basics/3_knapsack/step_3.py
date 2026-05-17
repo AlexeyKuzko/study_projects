@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 10 Dinamics Basics / 3 Knapsack / Step 3."""
+
+
 def knapsack(n, S, weights):
     dp = [0] * (S + 1)
     for weight in weights:

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 13 Graph Algorithms / Bfs / Step 2."""
+
 import sys
 from collections import deque
 

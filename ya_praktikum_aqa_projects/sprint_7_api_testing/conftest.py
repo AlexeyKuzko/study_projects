@@ -1,3 +1,5 @@
+"""Pytest fixtures for Yandex Praktikum Automation QA projects: Sprint 7 API Testing."""
+
 import json
 
 import allure
@@ -10,9 +12,9 @@ faker = Faker()
 
 
 @pytest.fixture
-@allure.step('Конструируем запрос для отправки заказа')
+@allure.step("Конструируем запрос для отправки заказа")
 def create_order_payload():
-    fake_date = faker.date_between(start_date='today', end_date='+1y')
+    fake_date = faker.date_between(start_date="today", end_date="+1y")
     date = fake_date.strftime("%Y-%m-%d")
     payload = {
         "firstName": faker.first_name(),
@@ -22,13 +24,13 @@ def create_order_payload():
         "phone": "+76665551122",
         "rentTime": 2,
         "deliveryDate": date,
-        "comment": "Комментирую!"
+        "comment": "Комментирую!",
     }
     return payload
 
 
 @pytest.fixture
-@allure.step('Создание курьера, логин и удаление')
+@allure.step("Создание курьера, логин и удаление")
 def create_courier_login_and_delete(create_user_payload):
     payload = create_user_payload
     response = CourierRequests.create_courier_post(payload)
@@ -38,11 +40,7 @@ def create_courier_login_and_delete(create_user_payload):
 
 
 @pytest.fixture
-@allure.step('Создание данных курьера')
+@allure.step("Создание данных курьера")
 def create_user_payload():
-    data = {
-        "firstName": faker.name(),
-        "login": faker.name(),
-        "password": faker.pyint()
-    }
+    data = {"firstName": faker.name(), "login": faker.name(), "password": faker.pyint()}
     return json.dumps(data)

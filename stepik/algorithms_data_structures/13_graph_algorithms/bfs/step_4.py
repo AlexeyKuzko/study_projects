@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 13 Graph Algorithms / Bfs / Step 4."""
+
 import sys
 from collections import deque
 
@@ -12,12 +14,7 @@ def bfs(maze, n):
             return len(path), path
         for dx, dy, direction in directions:
             nx, ny = x + dx, y + dy
-            if (
-                (0 <= nx < n)
-                and (0 <= ny < n)
-                and maze[nx][ny] == "."
-                and (nx, ny) not in visited
-            ):
+            if (0 <= nx < n) and (0 <= ny < n) and maze[nx][ny] == "." and (nx, ny) not in visited:
                 queue.append((nx, ny, path + direction))
                 visited.add((nx, ny))
     return -1, ""

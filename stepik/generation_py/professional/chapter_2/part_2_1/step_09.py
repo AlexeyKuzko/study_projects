@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 1 / Step 09."""
+
+
 def convert(string: str) -> str:
     lower_count = sum(1 for char in string if char.islower())
     upper_count = sum(1 for char in string if char.isupper())

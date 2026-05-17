@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 1 / Step 11."""
+
+
 def likes(names):
     if not names:
         return "Никто не оценил данную запись"

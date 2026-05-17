@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 1 / 3 Step."""
+
 mass = float(input())
 height = float(input())
 bmi = mass / height**2

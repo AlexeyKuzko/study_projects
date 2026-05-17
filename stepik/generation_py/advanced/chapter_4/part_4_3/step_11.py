@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 3 / Step 11."""
+
+
 def pascal(n, row):
     if row == 0:
         return [1]

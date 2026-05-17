@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 2 / Step 07."""
+
+
 # Функция для извлечения индексов гласных букв в слове
 def extract_vowel_indices(word, vowels):
     return [i for i, ch in enumerate(word) if ch in vowels]

@@ -1,3 +1,6 @@
+"""Solution for Yandex Academy Python Handbook contest solutions: Python Basics / Input Output Formatting."""
+
+
 # Problem A
 def problem_a():
     print("Привет, Яндекс!")

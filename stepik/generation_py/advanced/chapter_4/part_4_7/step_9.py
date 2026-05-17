@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 7 / Step 9."""
+
 n, m = map(int, input().split())
 
 matrix1 = []
@@ -15,4 +17,4 @@ for _ in range(n):
 result = [[matrix1[i][j] + matrix2[i][j] for j in range(m)] for i in range(n)]
 
 for row in result:
-    print(' '.join(map(str, row)))
+    print(" ".join(map(str, row)))

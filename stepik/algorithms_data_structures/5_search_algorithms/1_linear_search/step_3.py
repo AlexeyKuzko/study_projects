@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 1 Linear Search / Step 3."""
+
+
 def linear_search(arr, target):
     """
     Функция выполняет линейный поиск в списке arr и возвращает индекс первого

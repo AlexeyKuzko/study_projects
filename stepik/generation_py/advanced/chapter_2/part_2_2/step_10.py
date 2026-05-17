@@ -1,4 +1,7 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 2 / Step 10."""
+
 n = int(input().strip())
+
 
 def is_infected(s):
     target = "anton"
@@ -9,6 +12,7 @@ def is_infected(s):
         if index == len(target):
             return True
     return False
+
 
 infected_indices = []
 

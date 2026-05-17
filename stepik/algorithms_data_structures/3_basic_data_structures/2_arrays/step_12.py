@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 2 Arrays / Step 12."""
+
+
 def shift_array():
     # Ввод количества элементов и массива чисел
     n = int(input())

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 2 / Step 02."""
+
 # Define sets of English and Russian letters
 english_letters = set("AaBCcEeHKMOoPpTXxy")
 russian_letters = set("АаВСсЕеНКМОоРрТХху")

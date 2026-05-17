@@ -1,3 +1,5 @@
+"""Automated test cases for Main Features in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3."""
+
 import allure
 
 from pages.constructor_page import ConstructorPage
@@ -7,7 +9,6 @@ from locators import OrderFeedPageLocators, ConstructorPageLocators
 
 @allure.story("Проверка основного функционала")
 class TestMainFeatures:
-
     @allure.title("Переход по клику на «Конструктор»")
     def test_redirect_by_constructor_button(self, get_driver):
         constructor_page = ConstructorPage(get_driver)

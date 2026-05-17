@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 4 Sorting Algorithms / 2 Insertion Sort / Step 3."""
+
+
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]

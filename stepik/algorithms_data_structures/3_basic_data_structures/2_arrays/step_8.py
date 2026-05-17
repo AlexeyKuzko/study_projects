@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 2 Arrays / Step 8."""
+
+
 def second_max():
     # Ввод количества чисел
     n = int(input())
@@ -6,7 +9,7 @@ def second_max():
     numbers = list(map(int, input().split()))
 
     # Инициализация max1 и max2
-    max1 = max2 = float('-inf')
+    max1 = max2 = float("-inf")
 
     # Обход массива чисел
     for num in numbers:
@@ -17,9 +20,10 @@ def second_max():
             max2 = num
 
     # Вывод второго по величине числа
-    if max2 != float('-inf'):
+    if max2 != float("-inf"):
         print(max2)
     else:
         print(None)
+
 
 second_max()

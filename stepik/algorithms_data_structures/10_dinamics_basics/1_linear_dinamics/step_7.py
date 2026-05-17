@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 10 Dinamics Basics / 1 Linear Dinamics / Step 7."""
+
 import sys
 
 input = sys.stdin.readline
@@ -15,9 +17,7 @@ def max_grass(n, terrain):
         # Обновляем клетки, куда можно прыгнуть
         for jump in (1, 3, 5):
             if i + jump < n and terrain[i + jump] != "d":
-                dp[i + jump] = max(
-                    dp[i + jump], dp[i] + (1 if terrain[i + jump] == "g" else 0)
-                )
+                dp[i + jump] = max(dp[i + jump], dp[i] + (1 if terrain[i + jump] == "g" else 0))
 
     # Возвращаем результат для последней клетки
     return dp[n - 1] if dp[n - 1] != -float("inf") else -1

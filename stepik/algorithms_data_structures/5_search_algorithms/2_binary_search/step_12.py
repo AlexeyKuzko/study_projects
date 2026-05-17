@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 2 Binary Search / Step 12."""
+
 import sys
 
 input = sys.stdin.readline

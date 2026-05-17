@@ -1,3 +1,5 @@
+"""Solution for Yandex Academy Python Handbook contest solutions: Devops Contest / problem 1."""
+
 # Прочитать количество пар
 n = int(input().strip())
 # Формирование списка пар
@@ -5,6 +7,7 @@ pairs = []
 for _ in range(n):
     a, b = map(int, input().strip().split())
     pairs.append((a, b))
+
 
 # Получение отсортированных индексов
 def sort_and_get_indices(n, pairs):
@@ -15,6 +18,8 @@ def sort_and_get_indices(n, pairs):
     # Извлечем индексы после сортировки
     sorted_indices = [pair[2] for pair in sorted_pairs]
     return sorted_indices
+
+
 sorted_indices = sort_and_get_indices(n, pairs)
 
 # Вывод результата

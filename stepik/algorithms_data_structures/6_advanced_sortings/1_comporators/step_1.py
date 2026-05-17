@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 6 Advanced Sortings / 1 Comporators / Step 1."""
+
+
 def sort_pairs(n, pairs):
     # Добавляем к каждой паре ее номер
     pairs_with_index = [(pair[0], pair[1], i + 1) for i, pair in enumerate(pairs)]

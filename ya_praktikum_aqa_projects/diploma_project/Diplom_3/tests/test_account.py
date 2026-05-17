@@ -1,3 +1,5 @@
+"""Automated test cases for Account in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3."""
+
 import allure
 
 from pages.account_page import AccountPage
@@ -8,7 +10,6 @@ from locators import ConstructorPageLocators, LoginPageLocators, AccountPageLoca
 
 @allure.story("Проверка Личного кабинета")
 class TestAccountPage:
-
     @allure.title("Переход по клику на «Личный кабинет»")
     def test_account_link_redirect(self, get_driver, login_user):
         constructor_page = ConstructorPage(get_driver)

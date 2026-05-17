@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 3 Multidimensional Arrays And Matrices / Step 2."""
+
 n = int(input())
 matrix = [[0] * n for _ in range(n)]
 

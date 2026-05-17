@@ -1,3 +1,5 @@
+"""Automated test cases for Orders Get in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 2."""
+
 import allure
 
 from data import OrderHelper, Errors
@@ -5,7 +7,6 @@ from data import OrderHelper, Errors
 
 @allure.story("Проверка получения заказов конкретного пользователя")
 class TestOrdersGet:
-
     @allure.title("Получение заказов - авторизованный пользователь")
     def test_get_orders_auth_user_true(self, valid_hashes, create_user):
         OrderHelper.create_order(valid_hashes, create_user["response_json"]["accessToken"])

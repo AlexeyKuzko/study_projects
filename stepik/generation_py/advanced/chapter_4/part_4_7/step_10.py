@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 7 / Step 10."""
+
 n, m = map(int, input().split())
 
 matrix1 = []
@@ -22,4 +24,4 @@ for i in range(n):
             result[i][j] += matrix1[i][t] * matrix2[t][j]
 
 for row in result:
-    print(' '.join(map(str, row)))
+    print(" ".join(map(str, row)))

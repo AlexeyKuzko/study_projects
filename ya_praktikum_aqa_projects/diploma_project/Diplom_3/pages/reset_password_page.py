@@ -1,3 +1,5 @@
+"""Reset Password Page support module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3 / Pages."""
+
 import allure
 
 from pages.base_page import BasePage
@@ -5,6 +7,7 @@ from locators import BasePageLocators, ResetPasswordPageLocators
 
 
 class ResetPasswordPage(BasePage):
+    """Page object for password reset interactions."""
 
     @allure.step("Ввод почты")
     def fill_email(self, email):

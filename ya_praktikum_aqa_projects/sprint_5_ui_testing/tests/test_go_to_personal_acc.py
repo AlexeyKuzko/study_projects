@@ -1,3 +1,5 @@
+"""Automated test cases for Go To Personal Acc in Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -13,8 +15,6 @@ class TestGoToPersonalAccount:
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         driver.find_element(*Locators.PERSONAL_ACC_BUTTON).click()
 
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.PROFILE_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.PROFILE_BUTTON))
 
         assert data.TestUrls.PERSONAL_ACCOUNT_PAGE == driver.current_url

@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 3 Binary Search On Answer / Step 4."""
+
+
 def max_worm_length(n, k, lengths):
     def can_divide(length):
         count = sum(l // length for l in lengths)

@@ -1,3 +1,5 @@
+"""Solution for Yandex Academy Python Handbook contest solutions: Python Basics / Conditional Statements."""
+
 # Problem A
 username = input("Как Вас зовут?")
 print(
@@ -159,11 +161,7 @@ length1 = int(input(""))
 length2 = int(input(""))
 length3 = int(input(""))
 
-if (
-    length1 + length2 > length3
-    and length1 + length3 > length2
-    and length2 + length3 > length1
-):
+if length1 + length2 > length3 and length1 + length3 > length2 and length2 + length3 > length1:
     print("YES")
 else:
     print("NO")
@@ -189,7 +187,7 @@ digits_asc = sorted(number)
 digits_desc = sorted(number, reverse=True)
 min_number = "".join(digits_asc[0:2])
 if int(min_number[0]) == 0:
-    min_number = int(f'{"".join(digits_asc[1])}0')
+    min_number = int(f"{''.join(digits_asc[1])}0")
 max_number = int("".join(digits_desc[0:2]))
 print(min_number, max_number)
 
@@ -233,9 +231,7 @@ elif v == third:
     third = "Вася"
 elif t == third:
     third = "Толя"
-print(
-    f"{' ' * 10}{first}{' ' * 10}\n{' ' * 2}{second}{' ' * 18}\n{' ' * 18}{third}{' ' * 2}"
-)
+print(f"{' ' * 10}{first}{' ' * 10}\n{' ' * 2}{second}{' ' * 18}\n{' ' * 18}{third}{' ' * 2}")
 print(f"{' ' * 3}II{' ' * 6}I{' ' * 6}III{' ' * 2}")
 
 
@@ -268,17 +264,9 @@ side1 = int(input(""))
 side2 = int(input(""))
 side3 = int(input(""))
 
-if (
-    side1**2 + side2**2 == side3**2
-    or side1**2 + side3**2 == side2**2
-    or side2**2 + side3**2 == side1**2
-):
+if side1**2 + side2**2 == side3**2 or side1**2 + side3**2 == side2**2 or side2**2 + side3**2 == side1**2:
     print("100%")
-elif (
-    side1**2 + side2**2 < side3**2
-    or side1**2 + side3**2 < side2**2
-    or side2**2 + side3**2 < side1**2
-):
+elif side1**2 + side2**2 < side3**2 or side1**2 + side3**2 < side2**2 or side2**2 + side3**2 < side1**2:
     print("велика")
 else:
     print("крайне мала")

@@ -1,3 +1,5 @@
+"""Solution for Specialist Python OOP course materials: Day 1 / Homework / 05 Triangle."""
+
 from typing import Self
 
 
@@ -31,7 +33,7 @@ class Triangle:
 # Треугольник задан координатами трех точек
 triangle = Triangle(Point(2, 4), Point(6, 8), Point(8, 0))
 
-# Задание: 
+# Задание:
 # найдите площадь и периметр треугольника, реализовав методы area() и perimeter()
 
 print("Периметр треугольника = ", triangle.perimeter())

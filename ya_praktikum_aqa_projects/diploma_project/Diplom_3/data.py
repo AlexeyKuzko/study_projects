@@ -1,3 +1,5 @@
+"""Data module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3."""
+
 import allure
 import requests
 import random
@@ -10,14 +12,13 @@ class Urls:
 
 
 class UserHelper:
-
     @staticmethod
     @allure.step("Регистрация тестового пользователя")
     def reg_user():
         payload = {
             "email": UserHelper.generate_email(),
             "password": UserHelper.generate_password(),
-            "name": UserHelper.generate_name()
+            "name": UserHelper.generate_name(),
         }
         response = requests.post(Urls.REGISTER, data=payload)
         response.raise_for_status()
@@ -26,7 +27,7 @@ class UserHelper:
     @staticmethod
     @allure.step("Генерация email")
     def generate_email():
-        email = f'kuzko-alexey5{random.randint(100, 999)}@ya.ru'
+        email = f"kuzko-alexey5{random.randint(100, 999)}@ya.ru"
         return email
 
     @staticmethod
@@ -34,9 +35,7 @@ class UserHelper:
     def generate_password():
         generated_password = ""
         for i in range(7):
-            generated_password += random.choice(
-                string.ascii_letters + string.digits + string.punctuation
-            )
+            generated_password += random.choice(string.ascii_letters + string.digits + string.punctuation)
         return generated_password
 
     @staticmethod

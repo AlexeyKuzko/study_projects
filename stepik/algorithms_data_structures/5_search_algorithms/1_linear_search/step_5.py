@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 1 Linear Search / Step 5."""
+
+
 def find_most_frequent_element(arr):
     """
     Функция находит элемент с наибольшей частотой в списке arr.

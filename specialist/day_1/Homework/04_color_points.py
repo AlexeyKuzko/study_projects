@@ -1,3 +1,5 @@
+"""Solution for Specialist Python OOP course materials: Day 1 / Homework / 04 Color Points."""
+
 import math
 
 
@@ -28,7 +30,7 @@ points = [
     Point(5, -2, "red"),
     Point(4, 8, "green"),
     Point(10, -2, "green"),
-    Point(-12, 0, "red")
+    Point(-12, 0, "red"),
 ]
 # Все точки одного цвета соединены линиями и образуют треугольник
 
@@ -48,7 +50,7 @@ for color in ("red", "green"):
     b = same_color_points[1].distance(same_color_points[2])
     c = same_color_points[2].distance(same_color_points[0])
     p = (a + b + c) / 2
-    area[color] = math.sqrt(p * (p-a) * (p-b) * (p-c))
+    area[color] = math.sqrt(p * (p - a) * (p - b) * (p - c))
 
 red_area = area["red"]
 green_area = area["green"]

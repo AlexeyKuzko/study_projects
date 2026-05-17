@@ -1,14 +1,9 @@
 """Начнем с создания карты"""
 
 # ♥ ♦ ♣ ♠
-VALUES = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A')
-SUITS = ('Spades', 'Clubs', 'Diamonds', 'Hearts')
-SUITS_UNI = {
-        'Spades': '♠',
-        'Clubs': '♣',
-        'Diamonds': '♦',
-        'Hearts': '♥'
-}
+VALUES = ("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
+SUITS = ("Spades", "Clubs", "Diamonds", "Hearts")
+SUITS_UNI = {"Spades": "♠", "Clubs": "♣", "Diamonds": "♦", "Hearts": "♥"}
 
 
 class Card:
@@ -30,12 +25,15 @@ class Card:
     def more(self, other_card) -> bool:
         """Возвращает True, если карта у которой вызван метод больше,
         чем карта, которую передали в качестве параметра"""
-        return ((VALUES.index(self.value), SUITS.index(self.suit)) >
-                (VALUES.index(other_card.value), SUITS.index(other_card.suit)))
+        return (VALUES.index(self.value), SUITS.index(self.suit)) > (
+            VALUES.index(other_card.value),
+            SUITS.index(other_card.suit),
+        )
 
     def less(self, other_card) -> bool:
         """Метод проверяет, является ли карта младше, чем карта в параметре"""
         return not self.more(other_card)
+
 
 if __name__ == "__main__":
     # Создадим несколько карт

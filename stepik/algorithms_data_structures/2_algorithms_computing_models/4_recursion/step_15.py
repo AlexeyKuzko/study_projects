@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 2 Algorithms Computing Models / 4 Recursion / Step 15."""
+
+
 def to_base_p(n, p):
     if n == 0:
         return ""

@@ -1,3 +1,5 @@
+"""Solution for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 1 / Praktikum / Database."""
+
 from typing import List
 
 from praktikum.bun import Bun
@@ -27,7 +29,9 @@ class Database:
         self.ingredients.append(Ingredient(INGREDIENT_TYPE_FILLING, "sausage", 300))
 
     def available_buns(self) -> List[Bun]:
+        """Return buns available in the test database."""
         return self.buns
 
     def available_ingredients(self) -> List[Ingredient]:
+        """Return ingredients available in the test database."""
         return self.ingredients

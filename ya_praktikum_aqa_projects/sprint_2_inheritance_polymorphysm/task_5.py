@@ -1,3 +1,6 @@
+"""Solution for Yandex Praktikum Automation QA projects: Sprint 2 Inheritance Polymorphysm / task 5."""
+
+
 class Results:
     def __init__(self, victories, draws, losses):
         self.victories = victories

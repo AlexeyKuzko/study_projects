@@ -1,6 +1,9 @@
+"""Solution for Yandex Academy Python Handbook contest solutions: Devops Contest / problem 2."""
+
 # Чтение входных данных
 n = int(input().strip())
 a = list(map(int, input().strip().split()))
+
 
 # Вычисление количества сравнений
 def count_insertion_sort_comparisons(n, a):
@@ -12,9 +15,11 @@ def count_insertion_sort_comparisons(n, a):
             comparisons += 1
             a[j + 1] = a[j]
             j -= 1
-        comparisons += (j >= 0)  # для последнего сравнения когда a[j] <= key или j < 0
+        comparisons += j >= 0  # для последнего сравнения когда a[j] <= key или j < 0
         a[j + 1] = key
     return comparisons
+
+
 result = count_insertion_sort_comparisons(n, a)
 
 # Вывод результата

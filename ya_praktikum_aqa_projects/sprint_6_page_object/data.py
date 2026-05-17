@@ -1,3 +1,6 @@
+"""Data module for Yandex Praktikum Automation QA projects: Sprint 6 Page Object."""
+
+
 class Urls:
     BASE_URL = "https://qa-scooter.praktikum-services.ru/"
     ORDER_PAGE_URL = f"{BASE_URL}order"

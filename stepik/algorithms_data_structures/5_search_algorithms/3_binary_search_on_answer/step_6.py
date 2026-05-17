@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 3 Binary Search On Answer / Step 6."""
+
+
 def can_place_points(a, n, k, min_dist):
     count = 1  # первый элемент всегда выбирается
     last_position = a[0]

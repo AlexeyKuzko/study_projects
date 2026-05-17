@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [
+    ".venv",
+    ".venvs",
+    "specialist/extras",
+    "**/allure_results",
+    "**/htmlcov",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"

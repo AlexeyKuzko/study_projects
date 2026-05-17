@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 2 / Step 06."""
+
 # Read the number of people
 n = int(input())
 

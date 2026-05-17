@@ -1,3 +1,5 @@
+"""Automated test cases for Reset Password in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3."""
+
 import allure
 
 from pages.login_page import LoginPage
@@ -8,7 +10,6 @@ from locators import ResetPasswordPageLocators as reset_pass_locators
 
 @allure.story("Проверка восстановления пароля")
 class TestResetPassword:
-
     @allure.title("Переход на страницу восстановления пароля по кнопке «Восстановить пароль»")
     def test_reset_link_redirects_to_reset_page(self, get_driver):
         constructor_page = ConstructorPage(get_driver)

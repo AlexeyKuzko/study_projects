@@ -1,5 +1,7 @@
-class TestBurger:
+"""Automated tests for Burger in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 1."""
 
+
+class TestBurger:
     def test_add_ingredient_adds_all_ingredient_attrs_true(self, burger, sauce_ingredient, filling_ingredient):
         burger.add_ingredient(filling_ingredient)
         assert len(burger.ingredients) == 1
@@ -29,5 +31,5 @@ class TestBurger:
 
     def test_get_receipt_returns_expected_reciept_true(self, burger):
         receipt = burger.get_receipt()
-        assert receipt.startswith('(==== black bun ====)')
-        assert 'Price: ' in receipt
+        assert receipt.startswith("(==== black bun ====)")
+        assert "Price: " in receipt

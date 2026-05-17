@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 6 Advanced Sortings / 1 Comporators / Step 2."""
+
 import functools
 
 

@@ -1,3 +1,5 @@
+"""Data module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 2."""
+
 import random
 import string
 
@@ -14,7 +16,6 @@ class ApiEndpoints:
 
 
 class UserHelper:
-
     @staticmethod
     @allure.step("Регистрация тестового юзера")
     def reg_user():
@@ -47,9 +48,7 @@ class UserHelper:
     def generate_password():
         generated_password = ""
         for i in range(7):
-            generated_password += random.choice(
-                string.ascii_letters + string.digits + string.punctuation
-            )
+            generated_password += random.choice(string.ascii_letters + string.digits + string.punctuation)
         return generated_password
 
     @staticmethod
@@ -117,7 +116,7 @@ class IngredientsHash:
         "61c0c5a71d1f82001bdaaa73",
         "61c0c5a71d1f82001bdaaa6f",
         "61c0c5a71d1f82001bdaaa75",
-        "61c0c5a71d1f82001bdaaa6c"
+        "61c0c5a71d1f82001bdaaa6c",
     )
 
     @classmethod

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 12 Graphs / Step 9."""
+
 import sys
 
 n, m, q = map(int, input().split())

@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 2 Algorithms Computing Models / 4 Recursion / Step 13."""
+
+
 def calculate(n, memo={}):
     if n <= 1:
         return 1

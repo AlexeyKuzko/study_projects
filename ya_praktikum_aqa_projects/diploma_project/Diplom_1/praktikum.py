@@ -1,3 +1,5 @@
+"""Praktikum module for Yandex Praktikum Automation QA projects: Diploma Project / Diplom 1."""
+
 from typing import List
 
 from praktikum.bun import Bun

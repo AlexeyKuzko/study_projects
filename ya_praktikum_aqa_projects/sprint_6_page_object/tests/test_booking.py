@@ -1,3 +1,5 @@
+"""Automated test cases for Booking in Yandex Praktikum Automation QA projects: Sprint 6 Page Object."""
+
 import allure
 import pytest
 from data import Urls
@@ -7,7 +9,6 @@ from locators.booking_page_locators import BookingPageLocators
 
 
 class TestBookingPositive:
-
     @allure.title("Нажать кнопку «Заказать» (header)")
     @allure.description("Проверка открытия формы заказа по нажатию на кнопку «Заказать» в хэдере")
     def test_click_booking_header(self, driver):
@@ -65,9 +66,7 @@ class TestBookingPositive:
         assert booking_page.find_show_status_button().text == "Посмотреть статус"
 
     @allure.title("Клик на лого Самоката")
-    @allure.description(
-        "Проверка редиректа на главную по нажатию на лого Самоката"
-    )
+    @allure.description("Проверка редиректа на главную по нажатию на лого Самоката")
     def test_redirect_scooter(self, driver):
         redirect_page = BookingPage(driver)
         redirect_page.open_base_url()
@@ -77,9 +76,7 @@ class TestBookingPositive:
         assert redirect_page.show_current_url() == Urls.BASE_URL
 
     @allure.title("Клик на лого Яндекса")
-    @allure.description(
-        "Проверка редиректа на Дзен по нажатию на лого Яндекса"
-    )
+    @allure.description("Проверка редиректа на Дзен по нажатию на лого Яндекса")
     def test_redirect_yandex(self, driver):
         redirect_page = BookingPage(driver)
         redirect_page.open_base_url()

@@ -1,11 +1,14 @@
+"""Solution for Yandex Praktikum Automation QA projects: Sprint 2 Inheritance Polymorphysm / task 3."""
+
+
 class PointsForPlace:
     @staticmethod
     def get_points_for_place(place: int):
         points = 0
         if place > 100:
-            print('Баллы начисляются только первым 100 участникам')
+            print("Баллы начисляются только первым 100 участникам")
         elif place < 1:
-            print('Спортсмен не может занять нулевое или отрицательное место')
+            print("Спортсмен не может занять нулевое или отрицательное место")
         else:
             points = 101 - place
         return points
@@ -16,7 +19,7 @@ class PointsForMeters:
     def get_points_for_meters(meters: int):
         points = 0
         if meters < 0:
-            print('Количество метров не может быть отрицательным')
+            print("Количество метров не может быть отрицательным")
         else:
             points = meters * 0.5
         return int(points)

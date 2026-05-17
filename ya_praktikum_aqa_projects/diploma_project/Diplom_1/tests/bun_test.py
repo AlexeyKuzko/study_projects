@@ -1,5 +1,7 @@
-class TestBun:
+"""Automated tests for Bun in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 1."""
 
+
+class TestBun:
     def test_get_name_return_correct_name_true(self, bun):
         assert bun.get_name() == "black bun"
 

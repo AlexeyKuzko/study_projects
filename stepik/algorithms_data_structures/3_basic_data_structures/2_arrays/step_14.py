@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 2 Arrays / Step 14."""
+
+
 def reverse_permutation():
     # Ввод количества элементов и массива чисел
     n = int(input())
@@ -12,6 +15,7 @@ def reverse_permutation():
         reverse_permutation[num - 1] = i + 1
 
     # Вывести массив reverse_permutation
-    print(' '.join(map(str, reverse_permutation)))
+    print(" ".join(map(str, reverse_permutation)))
+
 
 reverse_permutation()

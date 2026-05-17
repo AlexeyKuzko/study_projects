@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 1 Linear Search / Step 4."""
+
+
 def find_min_max(arr):
     """
     Функция находит минимальное и максимальное значения в списке arr.

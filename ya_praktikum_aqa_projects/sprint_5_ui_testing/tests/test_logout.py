@@ -1,3 +1,5 @@
+"""Automated test cases for Logout in Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 import data
 from locators import *
 from selenium.webdriver.support import expected_conditions
@@ -12,15 +14,11 @@ class TestLogout:
         driver.find_element(*Locators.LOGIN_BUTTON).click()
         driver.find_element(*Locators.PERSONAL_ACC_BUTTON).click()
 
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.LOGOUT_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.LOGOUT_BUTTON))
 
         driver.find_element(*Locators.LOGOUT_BUTTON).click()
 
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.LOGIN_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.LOGIN_BUTTON))
 
         assert data.TestUrls.LOGIN_PAGE == driver.current_url
         assert driver.find_element(*Locators.LOGIN_BUTTON).text == "Войти"

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 2 / Step 7."""
+
 timur_choice = input().strip()
 ruslan_choice = input().strip()
 

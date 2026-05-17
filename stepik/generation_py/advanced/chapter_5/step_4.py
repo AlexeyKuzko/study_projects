@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 5 / Step 4."""
+
 n = int(input())
 matrix = [["." for _ in range(n)] for _ in range(n)]
 

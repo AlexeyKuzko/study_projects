@@ -1,3 +1,5 @@
+"""Automated test cases for Go To Constructor in Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 import data
 from locators import *
 from selenium.webdriver.support import expected_conditions
@@ -13,9 +15,7 @@ class TestGoToConstructor:
         driver.find_element(*Locators.PERSONAL_ACC_BUTTON).click()
         driver.find_element(*Locators.CONSTRUCTOR_BUTTON).click()
 
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON))
 
         assert data.TestUrls.MAIN_PAGE == driver.current_url
 
@@ -27,8 +27,6 @@ class TestGoToConstructor:
         driver.find_element(*Locators.PERSONAL_ACC_BUTTON).click()
         driver.find_element(*Locators.LOGO_BUTTON).click()
 
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON))
 
         assert data.TestUrls.MAIN_PAGE == driver.current_url

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 3 / Part 3 1 / Step 21."""
+
 from datetime import date, timedelta
 from typing import List
 

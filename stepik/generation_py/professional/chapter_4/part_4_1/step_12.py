@@ -1,4 +1,7 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 4 / Part 4 1 / Step 12."""
+
 import sys
+
 
 def determine_winner():
     moves = list(map(int, sys.stdin.read().split()))
@@ -18,6 +21,7 @@ def determine_winner():
         print(last_player)
     else:
         print(other_player)
+
 
 if __name__ == "__main__":
     determine_winner()

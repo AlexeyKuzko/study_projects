@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 7 Deque / Step 5."""
+
 from collections import deque
 import sys
 

@@ -1,3 +1,5 @@
+"""Automated test cases for Questions in Yandex Praktikum Automation QA projects: Sprint 6 Page Object."""
+
 import allure
 import pytest
 from locators.questions_page_locators import QuestionsPageLocators
@@ -5,7 +7,6 @@ from page_objects.questions_page import ImportantQuestions
 
 
 class TestQuestionsSection:
-
     answers = [
         "Сутки — 400 рублей. Оплата курьеру — наличными или картой.",
         "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.",
@@ -19,7 +20,8 @@ class TestQuestionsSection:
 
     @allure.title("Тесты для раздела «Вопросы о важном»")
     @allure.step("Проверка, что когда нажимаешь на стрелочку, открывается ожидаемый текст ответа")
-    @pytest.mark.parametrize("q, a, answers",
+    @pytest.mark.parametrize(
+        "q, a, answers",
         [
             [
                 QuestionsPageLocators.question_price,

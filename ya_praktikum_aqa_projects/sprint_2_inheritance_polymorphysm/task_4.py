@@ -1,3 +1,6 @@
+"""Solution for Yandex Praktikum Automation QA projects: Sprint 2 Inheritance Polymorphysm / task 4."""
+
+
 class EmployeeSalary:
     hourly_payment = 400
 

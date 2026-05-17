@@ -1,3 +1,5 @@
+"""Automated test cases for Order Feed in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 3."""
+
 import allure
 
 from pages.order_feed_page import OrderFeedPage
@@ -8,7 +10,6 @@ from locators import OrderFeedPageLocators, ConstructorPageLocators, AccountPage
 
 @allure.story("Проверка раздела «Лента заказов»")
 class TestOrderFeed:
-
     @allure.title("Если кликнуть на заказ, откроется всплывающее окно с деталями")
     def test_press_order_get_popup(self, get_driver):
         constructor_page = ConstructorPage(get_driver)

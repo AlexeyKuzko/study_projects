@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 2 / Step 11."""
+
 input_word = input().strip()
 
 initial_text = input_word + " запретил букву"

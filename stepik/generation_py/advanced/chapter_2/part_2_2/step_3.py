@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 2 / Step 3."""
+
 input_string = input()
 numbers = [int(i) for i in input_string.split()]
 

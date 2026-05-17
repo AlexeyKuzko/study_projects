@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 5 / Step 6."""
+
+
 def is_latin_square(matrix, n):
     # Проверяем строки
     for row in matrix:

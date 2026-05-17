@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 6 Advanced Sortings / 1 Comporators / Step 3."""
+
+
 def optimal_point(n, a):
     a.sort()
     median_index = n // 2

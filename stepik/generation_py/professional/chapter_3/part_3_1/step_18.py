@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 3 / Part 3 1 / Step 18."""
+
 # счетчик для нужного количества ураганов
 early_hurricanes = 0
 

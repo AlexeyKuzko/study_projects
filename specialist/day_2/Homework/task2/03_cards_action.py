@@ -1,3 +1,5 @@
+"""Solution for Specialist Python OOP course materials: Day 2 / Homework / Task2 / 03 Cards Action."""
+
 from card import SUITS, VALUES, Card
 
 

@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 2 Algorithms Computing Models / 4 Recursion / Step 14."""
+
+
 def generate_partitions(n, max_value, current_partition, result):
     if n == 0:
         result.append(current_partition[:])  # добавляем копию текущего разбиения

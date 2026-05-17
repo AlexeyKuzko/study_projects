@@ -1,3 +1,5 @@
+"""Automated test cases for User Edit in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 2."""
+
 import allure
 import pytest
 import requests
@@ -11,8 +13,11 @@ class TestUserEdit:
     @pytest.mark.parametrize("payload", ["email", "name"])
     def test_authorized_user_edit_true(self, create_user, gen_name, payload):
         payload = {payload: gen_name}
-        response = requests.patch(ApiEndpoints.USER, data=payload,
-                                  headers={"Authorization": f'{create_user["response_json"]["accessToken"]}'})
+        response = requests.patch(
+            ApiEndpoints.USER,
+            data=payload,
+            headers={"Authorization": f"{create_user['response_json']['accessToken']}"},
+        )
         assert response.status_code == 200
         assert response.json()["user"][list(payload.keys())[0]] == payload[list(payload.keys())[0]]
 

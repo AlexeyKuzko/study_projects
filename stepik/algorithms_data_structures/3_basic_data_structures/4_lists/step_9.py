@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 4 Lists / Step 9."""
+
 import sys
 
 input = sys.stdin.readline

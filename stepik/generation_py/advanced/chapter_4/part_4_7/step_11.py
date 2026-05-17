@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 4 / Part 4 7 / Step 11."""
+
 n = int(input())
 
 matrix = []

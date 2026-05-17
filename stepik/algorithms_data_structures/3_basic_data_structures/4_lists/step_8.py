@@ -1,8 +1,12 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 4 Lists / Step 8."""
+
+
 class Node:
     def __init__(self, data):
         self.data = data
         self.prev = None
         self.next = None
+
 
 def remove_all_nodes_with_value(head, val):
     if head is None:
@@ -24,6 +28,7 @@ def remove_all_nodes_with_value(head, val):
 
     return head
 
+
 def print_list(head):
     if head is None:
         print("None")
@@ -34,6 +39,7 @@ def print_list(head):
         print(curr.data, end=" ")
         curr = curr.next
     print()
+
 
 n = int(input())
 data = list(map(int, input().split()))

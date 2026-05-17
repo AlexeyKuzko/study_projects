@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 6 Advanced Sortings / 3 Quick Sort / Step 4."""
+
+
 def quickselect(arr, L, R, k, depth, r):
     if L == R:
         return arr[L]

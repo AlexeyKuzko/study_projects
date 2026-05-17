@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 5 / Step 1."""
+
+
 def every_n_elements(input_str, n_elems):
     lst_from_str = input_str.split()
     result_lists = [[] for _ in range(n_elems)]

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 2 / Step 04."""
+
 # Read input values
 numbers = list(map(int, input().split()))
 

@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 2 Arrays / Step 13."""
+
+
 def count_elements():
     # Ввод количества элементов и массива чисел
     n = int(input())
@@ -15,5 +18,6 @@ def count_elements():
 
     # Вывести значение переменной count
     print(count)
+
 
 count_elements()

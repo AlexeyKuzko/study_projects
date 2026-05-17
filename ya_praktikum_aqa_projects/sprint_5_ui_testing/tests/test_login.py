@@ -1,3 +1,5 @@
+"""Automated test cases for Login in Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 import data
 from locators import *
 from selenium.webdriver.support import expected_conditions
@@ -10,9 +12,7 @@ class TestLogin:
         driver.find_element(*Locators.LOGIN_EMAIL).send_keys(data.TestCredentials.EMAIL)
         driver.find_element(*Locators.LOGIN_PASSWORD).send_keys(data.TestCredentials.PASSWORD)
         driver.find_element(*Locators.LOGIN_BUTTON).click()
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON))
 
         assert driver.find_element(*Locators.ORDER_BUTTON).text == "Оформить заказ"
 
@@ -21,9 +21,7 @@ class TestLogin:
         driver.find_element(*Locators.LOGIN_EMAIL).send_keys(data.TestCredentials.EMAIL)
         driver.find_element(*Locators.LOGIN_PASSWORD).send_keys(data.TestCredentials.PASSWORD)
         driver.find_element(*Locators.LOGIN_BUTTON).click()
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON))
 
         assert driver.find_element(*Locators.ORDER_BUTTON).text == "Оформить заказ"
 
@@ -34,9 +32,7 @@ class TestLogin:
         driver.find_element(*Locators.LOGIN_EMAIL).send_keys(data.TestCredentials.EMAIL)
         driver.find_element(*Locators.LOGIN_PASSWORD).send_keys(data.TestCredentials.PASSWORD)
         driver.find_element(*Locators.LOGIN_BUTTON).click()
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON))
 
         assert driver.find_element(*Locators.ORDER_BUTTON).text == "Оформить заказ"
 
@@ -47,8 +43,6 @@ class TestLogin:
         driver.find_element(*Locators.LOGIN_EMAIL).send_keys(data.TestCredentials.EMAIL)
         driver.find_element(*Locators.LOGIN_PASSWORD).send_keys(data.TestCredentials.PASSWORD)
         driver.find_element(*Locators.LOGIN_BUTTON).click()
-        WebDriverWait(driver, 10).until(
-            expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON)
-        )
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.ORDER_BUTTON))
 
         assert driver.find_element(*Locators.ORDER_BUTTON).text == "Оформить заказ"

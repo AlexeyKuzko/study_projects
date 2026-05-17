@@ -1,3 +1,5 @@
+"""Solution for Specialist Python OOP course materials: Day 2 / Homework / Task2 / 02 Cards List."""
+
 from card import Card, VALUES
 
 # TODO-1: добавьте в список hearts_cards все червовые карты(от 2-ки до туза)

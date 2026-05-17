@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 10 Dinamics Basics / 2 Exponential Dinamics / Step 6."""
+
+
 def longest_common_subsequence(a, b, c):
     n, m, k = len(a), len(b), len(c)
     dp = [[[0] * (k + 1) for _ in range(m + 1)] for _ in range(n + 1)]

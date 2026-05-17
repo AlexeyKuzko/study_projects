@@ -1,3 +1,5 @@
+"""Automated test cases for User Login in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 2."""
+
 import allure
 import pytest
 
@@ -11,9 +13,13 @@ class TestUserLogin:
         response = UserHelper.login_user(create_user["email"], create_user["password"])
         assert response.status_code == 200
 
-    @pytest.mark.parametrize("login, password",
-                             [("test_name", UserHelper.generate_password()),
-                              (UserHelper.generate_email(), "test_password")])
+    @pytest.mark.parametrize(
+        "login, password",
+        [
+            ("test_name", UserHelper.generate_password()),
+            (UserHelper.generate_email(), "test_password"),
+        ],
+    )
     @allure.title("Логин с неверным логином и паролем")
     def test_login_invalid_credentials_false(self, create_user, login, password):
         response = UserHelper.login_user(login, password)

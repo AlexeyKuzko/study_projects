@@ -1,3 +1,5 @@
+"""Locators module for Yandex Praktikum Automation QA projects: Sprint 5 UI Testing."""
+
 from selenium.webdriver.common.by import By
 
 

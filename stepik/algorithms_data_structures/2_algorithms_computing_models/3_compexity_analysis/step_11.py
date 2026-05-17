@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 2 Algorithms Computing Models / 3 Compexity Analysis / Step 11."""
+
 k = int(input())
 m = int(input())
 a = int(input())

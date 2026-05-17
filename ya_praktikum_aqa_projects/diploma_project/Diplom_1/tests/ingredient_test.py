@@ -1,14 +1,18 @@
+"""Automated tests for Ingredient in Yandex Praktikum Automation QA projects: Diploma Project / Diplom 1."""
+
 import pytest
 from praktikum.ingredient import Ingredient
 from praktikum.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
 
 
 class TestIngredient:
-
-    @pytest.mark.parametrize("ingredient_type, name, price", [
-        (INGREDIENT_TYPE_SAUCE, "chili sauce", 300),
-        (INGREDIENT_TYPE_FILLING, "cutlet", 100),
-    ])
+    @pytest.mark.parametrize(
+        "ingredient_type, name, price",
+        [
+            (INGREDIENT_TYPE_SAUCE, "chili sauce", 300),
+            (INGREDIENT_TYPE_FILLING, "cutlet", 100),
+        ],
+    )
     def test_init_attributes_accepts_named_params_true(self, ingredient_type, name, price):
         ingredient = Ingredient(ingredient_type, name, price)
         assert ingredient.type == ingredient_type

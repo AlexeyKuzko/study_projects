@@ -1,3 +1,5 @@
+"""Questions Page Locators support module for Yandex Praktikum Automation QA projects: Sprint 6 Page Object / Locators."""
+
 from selenium.webdriver.common.by import By
 
 
@@ -10,8 +12,7 @@ class QuestionsPageLocators:
 
     question_need_several = (
         By.XPATH,
-        './/div[@class="accordion__button" and text()="Хочу сразу несколько самокатов! '
-        'Так можно?"]',
+        './/div[@class="accordion__button" and text()="Хочу сразу несколько самокатов! Так можно?"]',
     )
     answer_need_several = (
         By.XPATH,

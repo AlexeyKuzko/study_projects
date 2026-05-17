@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 6 Queue / Step 6."""
+
 n = int(input())
 queue = []
 

@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 2 / Step 01."""
+
 # Read input values
 d1 = int(input())
 d2 = int(input())

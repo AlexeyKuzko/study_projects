@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 3 Basic Data Structures / 6 Queue / Step 4."""
+
+
 class Queue:
     def __init__(self):
         self.items = []

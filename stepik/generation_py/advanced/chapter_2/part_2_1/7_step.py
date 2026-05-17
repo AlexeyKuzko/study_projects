@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 2 / Part 2 1 / 7 Step."""
+
 number = input()
 
 if len(number) == 6:

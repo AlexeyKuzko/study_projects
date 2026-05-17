@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 10 Dinamics Basics / 2 Exponential Dinamics / Step 7."""
+
+
 def check_template(s, p):
     dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
     dp[0][0] = True
@@ -11,7 +14,6 @@ def check_template(s, p):
             elif p[j - 1] == "*":
                 dp[i][j] = dp[i][j - 1] or dp[i - 1][j]
     return dp[len(s)][len(p)]
-
 
 
 t = int(input())

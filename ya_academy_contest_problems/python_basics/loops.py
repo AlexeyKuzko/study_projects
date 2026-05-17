@@ -1,3 +1,5 @@
+"""Solution for Yandex Academy Python Handbook contest solutions: Python Basics / Loops."""
+
 # Problem A
 cry = input("")
 
@@ -142,7 +144,7 @@ N = int(input())
 count = 0
 for i in range(1, N + 1):
     text = input()
-    if 'зайка' in text:
+    if "зайка" in text:
         count += 1
 print(count)
 # Problem P

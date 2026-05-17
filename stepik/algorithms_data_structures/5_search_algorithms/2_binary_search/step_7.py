@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 2 Binary Search / Step 7."""
+
+
 def binary_search(arr, target):
     low = 0
     high = len(arr) - 1

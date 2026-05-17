@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 2 / Part 2 1 / Step 14."""
+
+
 def choose_plural(amount, declensions):
     if 11 <= amount % 100 <= 19:
         return f"{amount} {declensions[2]}"

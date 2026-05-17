@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 6 Advanced Sortings / 4 Radix Sort / Step 2."""
+
+
 def sort_pairs(pairs):
     # Сортируем пары по первому элементу
     sorted_pairs = sorted(pairs, key=lambda x: x[0])

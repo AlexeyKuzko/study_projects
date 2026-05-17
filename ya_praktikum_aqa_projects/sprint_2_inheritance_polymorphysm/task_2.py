@@ -1,3 +1,6 @@
+"""Solution for Yandex Praktikum Automation QA projects: Sprint 2 Inheritance Polymorphysm / task 2."""
+
+
 class Movies:
     def __init__(self):
         self.movies = []
@@ -9,14 +12,14 @@ class Movies:
 class Comedy(Movies):
     def add_movie(self, movie):
         super().add_movie(movie)
-        return f'Комедии: {self.movies}'
+        return f"Комедии: {self.movies}"
 
 
 class Drama(Movies):
     def add_movie(self, movie):
         super().add_movie(movie)
-        return f'Драмы: {self.movies}'
+        return f"Драмы: {self.movies}"
 
 
-print(Comedy().add_movie('Большой куш'))
-print(Drama().add_movie('Оружейный барон'))
+print(Comedy().add_movie("Большой куш"))
+print(Drama().add_movie("Оружейный барон"))

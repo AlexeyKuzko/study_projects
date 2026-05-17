@@ -1,3 +1,6 @@
+"""Solution for Stepik course solutions: Generation Py / Advanced / Chapter 3 / Part 3 1 / Step 15."""
+
+
 def func(num1, num2):
     return num1 % num2 == 0
 

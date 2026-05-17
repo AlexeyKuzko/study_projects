@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Generation Py / Professional / Chapter 3 / Part 3 1 / Step 20."""
+
 from datetime import date
 from typing import List, Tuple
 

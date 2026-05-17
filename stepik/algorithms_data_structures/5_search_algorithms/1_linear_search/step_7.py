@@ -1,3 +1,5 @@
+"""Solution for Stepik course solutions: Algorithms Data Structures / 5 Search Algorithms / 1 Linear Search / Step 7."""
+
 n = int(input())
 a = list(map(int, input().split()))
 
